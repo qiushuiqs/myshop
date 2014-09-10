@@ -1,0 +1,497 @@
+set names utf-8
+error
+set names utf8
+set names utf8
+insert into test ('id','name') values(, )
+error
+set names utf8
+insert into test ('id','name') values(4, sdd\"sdd)
+error
+set names utf8
+insert into test ('id','name') values(4, 'sdd\"sdd')
+error
+set names utf8
+insert into test (id, name) values(4, 'sdd\"sdd')
+set names utf8
+insert into test (id, name) values(3, 'haha')
+select * from test
+set names utf8
+select * from test
+set names utf8
+select * from test
+set names utf8
+update test set id = '3',name = 'haha' where 1 limit 1
+set names utf8
+update test set id = '3',name = 'haha' where 1 limit 1
+set names utf8
+update test set id = '5',name = 'haha' where 1 limit 1
+set names utf8
+insert into test (id,name)values ('2','timee')
+set names utf8
+set names utf8
+insert into test (id,name)values ('10','frontuser')
+set names utf8
+insert into  (id,name)values ('10','frontuser')
+error
+set names utf8
+insert into test ()values ('')
+error
+set names utf8
+select * from test
+set names utf8
+select * from table
+error
+set names utf8
+select * from test
+set names utf8
+select * from test
+set names utf8
+select * from test
+set names utf8
+insert into cate (catename,dscrpt)values ('sdsd','gafaf')
+set names utf8
+insert into cate (catename,dscrpt)values ('eeeee','rrrrrrrr')
+set names utf8
+insert into category (cat_name,dscrpt,parent_id)values ('苹果手机','苹果手机修理','0')
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+insert into category (cat_name,dscrpt,parent_id)values ('安卓手机','安卓手机修理','0')
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+insert into category (cat_name,dscrpt,parent_id)values ('手机修理','手机修理信息','0')
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+insert into category (cat_name,dscrpt,parent_id)values ('手机修理','手机修理信息','0')
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+insert into category (cat_name,dscrpt,parent_id)values ('苹果手机','苹果手机修理','5')
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+insert into category (cat_name,dscrpt,parent_id)values ('安卓手机','安卓手机修理信息','5')
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+insert into category (cat_name,dscrpt,parent_id)values ('保姆业务','保姆业务信息','0')
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+insert into category (cat_name,dscrpt,parent_id)values ('windows手机','windows手机修理','5')
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+delete from category where cat_id = 9
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+delete from category where cat_id = 7
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+insert into category (cat_name,dscrpt,parent_id)values ('安卓手机','安卓手机修理','5')
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+delete from category where cat_id = 10
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+insert into category (cat_name,dscrpt,parent_id)values ('安卓手机','安卓手机修理','5')
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+delete from category where cat_id = 11
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+delete from category where cat_id = 6
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+insert into category (cat_name,dscrpt,parent_id)values ('苹果手机','苹果手机信息','5')
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+insert into category (cat_name,dscrpt,parent_id)values ('sdsds','sdsdsd','0')
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+delete from category where cat_id = 13
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+insert into category (cat_name,dscrpt,parent_id)values ('sdsdsd','sdsdsd','0')
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+delete from category where cat_id = 14
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 0
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 5
+set names utf8
+select * from category where cat_id = 12
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 5
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 12
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 5
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 5
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 5
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 5
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 12
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 5
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 5
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 5
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 5
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 12
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 12
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 5
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 12
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 12
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 12
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 12
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 12
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 12
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+insert into category (cat_name,dscrpt,parent_id)values ('苹果手机',' 苹果手机信息 修改后','5')
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+delete from category where cat_id = 15
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 12
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+update category set cat_name = '苹果手机',dscrpt = ' 苹果手机信息 修改',parent_id = '5'where cat_id=12>
+error
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 12
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+update category set cat_name = '苹果手机',dscrpt = ' 苹果手机信息 修改',parent_id = '5'where cat_id=12>
+error
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 12
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 12
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+update category set cat_name = '苹果手机',dscrpt = ' 苹果手机信息 是滴是滴',parent_id = '5'where cat_id=12>
+error
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 12
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+update category set cat_name = '苹果手机',dscrpt = ' 苹果手机信息 dfdf',parent_id = '5' where cat_id=12>
+error
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 12
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+update category set cat_name = '苹果手机',dscrpt = ' 苹果手机信息 sdss',parent_id = '5' where cat_id=12>
+error
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 12
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 12
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+update category set cat_name = '苹果手机',dscrpt = ' 苹果手机信息 sdsds',parent_id = '5' where cat_id=12
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 12
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+insert into category (cat_name,dscrpt,parent_id)values ('sdsds','sdsdsd','12')
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+insert into category (cat_name,dscrpt,parent_id)values ('dddd','ddddd','16')
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, parent_id from category where parent_id = 16
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, parent_id from category where parent_id = 17
+delete from category where cat_id = 17
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 16
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 12
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 16
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 12
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 12
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 12
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 12
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 12
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 16
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 12
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 16
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+update category set cat_name = 'sdsds',dscrpt = ' sdsdsd ',parent_id = '8' where cat_id=16
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+set names utf8
+set names utf8
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time)values ('dsdsds','sdsdsd','0','100','100','sdsdd','10000','0','0','0','1','','sdsdsd','1410277892')
+error
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,is_best,is_new,is_hot,is_on_sale,goods_brief,add_time)values ('dsdsds','sdsdsd','0','100','100','sdsdd','10000','0','0','0','1','sdsdsd','1410278019')
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,is_best,is_new,is_hot,is_on_sale,goods_brief,add_time)values ('手机贴','sn99991','7','100','100','desc','0.1','1','1','0','1','hahahahaha','1410360979')
+set names utf8
+select * from goods
+set names utf8
+select * from goods
+set names utf8
+select * from goods
+set names utf8
+select * from goods where goods_id=1
+set names utf8
+select * from goods where goods_id=2
