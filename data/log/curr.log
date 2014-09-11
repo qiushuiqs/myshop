@@ -495,3 +495,58 @@ set names utf8
 select * from goods where goods_id=1
 set names utf8
 select * from goods where goods_id=2
+set names utf8
+select * from goods
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,is_best,is_new,is_hot,is_on_sale,goods_brief,add_time)values ('ios开发','sdn00000001','8','90','100','这个是什么 我也不知道','1','1','1','1','1','什么什么','1410424490')
+set names utf8
+select * from goods
+set names utf8
+set names utf8
+select * from goods
+set names utf8
+set names utf8
+select * from goods
+set names utf8
+update goods set is_delete = '1' where goods_id=0
+set names utf8
+update goods set is_delete = '1' where goods_id=0
+set names utf8
+select * from goods
+set names utf8
+update goods set is_delete = '1' where goods_id=1
+set names utf8
+select * from goods
+set names utf8
+select * fromgoodswhere is_delete = 0
+error
+set names utf8
+select * from goods where is_delete = 0
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from goods where is_delete = 0
+set names utf8
+select * from goods where is_delete = 0
+set names utf8
+update goods set is_delete = '1' where goods_id=0
+set names utf8
+select * from goods where is_delete = 1
+set names utf8
+set names utf8
+select * from goods where is_delete = 1
+set names utf8
+set names utf8
+set names utf8
+set names utf8
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,goods_brief,goods_id)values ('erere','eerere','0','1111','11111','1111','11','11','1','1','1','1','111','0')

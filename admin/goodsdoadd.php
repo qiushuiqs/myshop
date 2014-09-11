@@ -2,7 +2,7 @@
 
 define('ACC',true);
 require('../system/init.php');
-
+/*
 $data = array();
 
 $data['goods_name'] = trim($_POST['goods_name']);
@@ -20,12 +20,19 @@ $data['is_on_sale'] = isset($_POST['is_on_sale'])? 1:0;
 $data['goods_brief'] = trim($_POST['goods_brief']);
 
 $data['add_time'] = time();
+*/
+print_r($_POST);
+$goods = new GoodsModel();
+$data = array();
+$goods->setField($goods->showField());
+$data=$goods->_facade($_POST);
+print_r($data);
 
 if($data['goods_name'] == ''){
 	exit('goods cannot be empty');
 }
 
-$goods = new GoodsModel();
+
 if($goods->add($data)){
 	echo 'goods add successfully<br>';
 }else{
