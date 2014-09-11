@@ -10,6 +10,6 @@ require('../system/init.php');
 */
 
 $goods = new GoodsModel();
-$goodslist = $goods->select();
+$goodslist = $goods->getGoodsVsTrash(0);
 
 include(__ROOT__.'view/admin/templates/goodslist.html');
