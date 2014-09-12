@@ -5,6 +5,7 @@ class Model{
 	protected $table = NULL; //是model所控制的表
 	protected $pk = NULL; //表中的PK
 	protected $field =array();
+	protected $_fill = array();
 	protected $db = NULL; //是引入的mysql对象
 	
 	public function __construct(){
@@ -29,6 +30,81 @@ class Model{
 		}
 		return $data;
 	}
+	
+	/*
+		自动填充
+		把未通过表单传过来的字段自动填充到数据库重
+		
+	*/
+	public function _autofill($data){
+		foreach($this->_fill as $v){
+			if(!array_key_exists($v[0],$data)){
+				switch($v[1]){
+					case 'value':
+					$data[$v[0]] = $v[2];
+					break;
+					case 'function':
+					$data[$v[0]] = $v[2]();
+					break;
+				}	
+			}
+		}
+		return $data;
+	}
+	
+	/*
+		$this->_valid = array(
+							array("验证字段","验证类型","错误提示","验证规则","验证规则2")
+		);
+		验证类型：1 -> 必须填
+				  0 -> 有在判断
+				  2 -> 非空再判断
+		字段验证方法
+	*/
+	
+	public function _validate($data){
+		if(empty($this->_valid)){
+			return true;
+		}
+		foreach($this->_valid as $k=>$v){
+			switch($v[1]){
+				case 1:
+					if(!isset($data[$v[0]])|| empty($data[$v[0]])){
+						return false;
+					}
+					break;
+				case 0:
+					if(!isset($data[$v[0]])){
+						return true;
+					}
+					break;
+				case 2:
+					if(empty($data[$v[0]])){
+						return true;
+					}
+					break;
+			}
+			switch($v[3]){
+				case 'require':
+					return !empty($data[$v[0]]);
+					break;
+				case 'number':
+					return 
+				case 'in':
+					return in_array($data[$v[0]],$v[4]);
+					break;
+				case 'between':
+					return ($data[$v[0]]>=$v[4][0] && $data[$v[0]]<=$v[4][1]);
+					break;
+				case 'length':
+					return (mb_strlen($data[$v[0]],'utf-8')>=$v[4][0] && mb_strlen($data[$v[0]],'utf-8')<=$v[4][1]);
+					break;
+				default:
+					return false;
+			}
+		}
+	}
+	
 	/*
 	在model父类里，写最基本的增删改查操作
 	*/

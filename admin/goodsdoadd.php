@@ -21,13 +21,15 @@ $data['goods_brief'] = trim($_POST['goods_brief']);
 
 $data['add_time'] = time();
 */
-print_r($_POST);
 $goods = new GoodsModel();
+
 $data = array();
 $goods->setField($goods->showField());
 $data=$goods->_facade($_POST);
-print_r($data);
+$data['goods_weight'] = $_POST['goods_weight']*$_POST['weight_unit'];
+$data=$goods->_autofill($data);
 
+/*
 if($data['goods_name'] == ''){
 	exit('goods cannot be empty');
 }
@@ -39,4 +41,4 @@ if($goods->add($data)){
 	echo 'goods add unsuccessfully<br>';
 }
 //print_r($data);
-
+*/
