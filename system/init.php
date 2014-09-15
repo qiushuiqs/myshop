@@ -13,7 +13,7 @@ define('DEBUG', true);
 
 //引入参数文件
 require(__ROOT__.'system/lib.base.php');
-//require(__ROOT__.'model/Model.class.php');
+//按顺序自动加载model文件（先加载model父类再加载子类），配置文件
 
 function __autoload($class){
 	if(substr($class,0,5)=='Model'){

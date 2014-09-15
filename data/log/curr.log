@@ -557,3 +557,55 @@ SHOW COLUMNS FROM goods
 insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_on_sale,goods_brief,goods_id)values ('火舌之吻','mfff','11','455','553','3434','200','1','1','1','dfdf','0')
 set names utf8
 SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+select * from goods where is_delete = 0
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods

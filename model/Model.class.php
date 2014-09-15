@@ -7,6 +7,7 @@ class Model{
 	protected $field =array();
 	protected $_fill = array();
 	protected $db = NULL; //是引入的mysql对象
+	protected $error = array();
 	
 	public function __construct(){
 		$this->db = mysql::getIns();
@@ -66,43 +67,66 @@ class Model{
 		if(empty($this->_valid)){
 			return true;
 		}
+		$this->error=array();
 		foreach($this->_valid as $k=>$v){
 			switch($v[1]){
 				case 1:
 					if(!isset($data[$v[0]])|| empty($data[$v[0]])){
+						$this->error[]=$v[2];
 						return false;
 					}
 					break;
 				case 0:
 					if(!isset($data[$v[0]])){
-						return true;
+						continue;
 					}
 					break;
 				case 2:
 					if(empty($data[$v[0]])){
-						return true;
+						continue;
 					}
 					break;
 			}
 			switch($v[3]){
 				case 'require':
-					return !empty($data[$v[0]]);
+					if(empty($data[$v[0]])){
+						$this->error[]=$v[2];
+						return false;
+					}
 					break;
 				case 'number':
-					return 
+					if(!is_numeric($data[$v[0]])){
+						$this->error[]=$v[2];
+						return false;
+					}
+					break;
 				case 'in':
-					return in_array($data[$v[0]],$v[4]);
+					if(!in_array($data[$v[0]],$v[4])){
+						$this->error[]=$v[2];
+						return false;
+					}
 					break;
 				case 'between':
-					return ($data[$v[0]]>=$v[4][0] && $data[$v[0]]<=$v[4][1]);
+					if($data[$v[0]]<$v[4][0] || $data[$v[0]]>$v[4][1]){
+						$this->error[]=$v[2];
+						return false;
+					}
 					break;
 				case 'length':
-					return (mb_strlen($data[$v[0]],'utf-8')>=$v[4][0] && mb_strlen($data[$v[0]],'utf-8')<=$v[4][1]);
+					if(strlen($data[$v[0]])<$v[4][0] || strlen($data[$v[0]])>$v[4][1]){
+						$this->error[]=$v[2];
+						return false;
+					}
 					break;
 				default:
 					return false;
 			}
 		}
+		return true;
+	}
+	
+	public function getErr(){
+		return $this->error;
 	}
 	
 	/*
