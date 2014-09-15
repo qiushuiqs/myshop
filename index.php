@@ -9,14 +9,14 @@ framework entry file
 
 define('ACC',true);
 require('./system/init.php');
-require(__ROOT__.'helper/Upload.class.php');
 
 if(isset($_POST['dosubmit'])){
 	//$conf = conf::getIns();
 	//print_r($conf->host);
 	//$conf->template_dir = "TEMP_DIR";
 	//print_r($conf->template_dir);
-	$up = new Upload();
+	$up = new UploadHelper();
+	$up->setExt('jpg,jpeg,gif,bmp,png,pdf');
 	if($res = $up->doUpload('file')){
 		echo "successful<br>";
 		echo $res."</br>";

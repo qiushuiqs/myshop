@@ -24,14 +24,23 @@ $data['add_time'] = time();
 $goods = new GoodsModel();
 $data = array();
 $goods->setField($goods->showField());
+//自动格式化数据
 $data=$goods->_facade($_POST);
 $data['goods_weight'] = $_POST['goods_weight']*$_POST['weight_unit'];
+//自动填充
 $data=$goods->_autofill($data);
+//自动校验
 if(!$goods->_validate($data)){
 	echo $goods->getErr()[0];
 	exit;
 }
 
+//上传图片
+$updriver = new UploadHelper();
+$ori_img = $updriver->doUpload('goods_img');
+if($ori_img){
+	$data['ori_img'] = $ori_img;
+}
 
 if($goods->add($data)){
 	echo 'goods add successfully<br>';

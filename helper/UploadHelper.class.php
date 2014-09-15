@@ -34,7 +34,7 @@ UPLOAD_ERR_CANT_WRITE
 创建文件夹目录
 */ 
 
-class Upload{
+class UploadHelper{
 	protected $allowExt = 'jpg,jpeg,gif,bmp,png';
 	protected $maxsize = 1;  //以M为单位
 	protected $errno = 0;
@@ -90,13 +90,21 @@ class Upload{
 			$this->errno = 11;
 			return false;
 		}
-		return $dir;
+		//将存入数据库的路劲设置为相对路劲
+		return str_replace(__ROOT__,"",$dir.$newname);
 	}
 	
 	public function getErr(){
 		return $this->errMsg[$this->errno];
 	}
 	
+	public function setExt($exts){
+		$this->allowExt =$exts;
+	}
+	
+	public function setSize($size){
+		$this->maxsize =$size;
+	}
 	/*
 		parm string $file ->filename
 		return string extension name
