@@ -609,3 +609,23 @@ set names utf8
 SHOW COLUMNS FROM goods
 set names utf8
 SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,goods_brief,goods_id,add_time)values ('上传图片','2323233','4','100','100','dddd','11','1','1','1','1','1','sddsdd2ewewew','0','1410769885')
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_new,is_on_sale,goods_brief,goods_id,is_hot,is_best,add_time,ori_img)values ('test1112','sss','9','1000','1000','sdsd','11','1','1','1','111111111111111','0','0','0','1410772059','E:/Work/WebApplication/wamp/www/mall1/myshop/data/uploads/201409/15/')
+set names utf8
+SHOW COLUMNS FROM goods
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_new,is_on_sale,goods_brief,goods_id,is_hot,is_best,add_time,ori_img)values ('test1113','ssss','9','1000','1000','sdsd','11','1','1','1','111111111111111','0','0','0','1410772207','E:/Work/WebApplication/wamp/www/mall1/myshop/data/uploads/201409/15/5crxjg.jpg')
+set names utf8
+SHOW COLUMNS FROM goods
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_new,is_on_sale,goods_brief,goods_id,is_hot,is_best,add_time,ori_img)values ('test1114','sssss','9','1000','1000','sdsd','11','1','1','1','111111111111111','0','0','0','1410772386','data/uploads/201409/15/jym1u4.jpg')

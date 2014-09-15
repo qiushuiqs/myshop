@@ -21,6 +21,8 @@ function __autoload($class){
 	}
 	else if(stripos(strtolower($class),'model')){
 		require(__ROOT__.'model/'.$class.'.class.php');
+	}else if(stripos(strtolower($class),'helper')){
+		require(__ROOT__.'helper/'.$class.'.class.php');
 	}else{
 		require(__ROOT__.'system/'.$class.'.class.php');
 	}
