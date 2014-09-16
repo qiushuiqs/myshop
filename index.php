@@ -9,7 +9,7 @@ framework entry file
 
 define('ACC',true);
 require('./system/init.php');
-
+/*
 if(isset($_POST['dosubmit'])){
 	//$conf = conf::getIns();
 	//print_r($conf->host);
@@ -24,6 +24,7 @@ if(isset($_POST['dosubmit'])){
 		echo $up->getErr();
 	}
 }
+*/
 /*
 log::write('111111');
 
@@ -51,9 +52,36 @@ for($i=0; $i<10000; $i++){
 //var_dump($test->reg(array('id'=>'10','name'=>'frontuser')));
 
 
+class ImageHelper{
+	protected $errMsg;
+	//获取图片信息 --静态类
+	/*
+		parm filename string
+		return array of fileinfo
+	*/
+	public static imageInfo($filename){
+		if(!file_exists($filename)){
+			$errMsg = 'ERR\(imageInfo\)-> Cannot find file: '.$filename;
+			return false;
+		}
+		$arr = getimagesize($filename);
+		$info['w'] = $arr[0];
+		$info['l'] = $arr[1];
+		$info['t'] = substr($arr['mime'],stripos($arr['mime'],'/')+1);
+		
+		return $info;
+	}
+	
+	public waterImage(){
+	}
+}
+
+print_r(ImageHelper::imageInfo());
+/*
 ?>
 <form action ="" method="post" enctype='multipart/form-data'>
 filename:<input type='text' name='filename' value='' /><br/>
 file: <input type='file' name='file' /><br/>
 <input type='submit' name='dosubmit' value='OK' />
 </form>
+*/

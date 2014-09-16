@@ -76,7 +76,7 @@ imagefill($im,200,200,$linecolor1);
 
 imagedestroy($im);
 
-
+/*
 //图片复制
 $sw = 131;
 $sh = 40;
@@ -90,3 +90,32 @@ imagecopy($big,$small,$sw+10,0,0,0,$sw,$sh);
 header('content-type: image/png');
 imagepng($big);
 imagedestroy($big);
+*/
+/*
+//创建缩略图
+$ow = 131;
+$oh = 40;
+
+$nw = (int)$ow/2;
+$nh = (int)$oh/2;
+
+$dst = imagecreatetruecolor($ow, $oh);
+$src = imagecreatefrompng("./data/uploads/201409/15/fgozj5.png");
+
+imagecopyresampled($dst, $src, 0,0,0,0,$nw,$nh,$ow,$oh);
+header('content-type: image/png');
+imagepng($dst);
+imagedestroy($dst);
+*/
+
+//透明复制图
+
+$dst = imagecreatefrompng("./data/uploads/201409/15/test.png");
+$src = imagecreatefrompng("./data/uploads/201409/15/fgozj5.png");
+
+imagealphablending($src, true);
+imagecopymerge($dst,$src,300,200,0,0,131,40,50);
+//header('content-type: image/png');
+//imagepng($dst);
+print_r(getimagesize("./data/uploads/201409/15/test.png"));
+imagedestroy($dst);
