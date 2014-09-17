@@ -629,3 +629,12 @@ insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc
 set names utf8
 SHOW COLUMNS FROM goods
 insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_new,is_on_sale,goods_brief,goods_id,is_hot,is_best,add_time,ori_img)values ('test1114','sssss','9','1000','1000','sdsd','11','1','1','1','111111111111111','0','0','0','1410772386','data/uploads/201409/15/jym1u4.jpg')
+set names utf8
+SHOW COLUMNS FROM goods
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_on_sale,goods_brief,goods_id,is_hot,is_new,add_time,ori_img,goods_img,thumb_img)values ('图片测试','123456','7','100','1000','','11','1','1','1','qwerrtyuuiio','0','0','0','1410944244','data/uploads/201409/17/8uldyx.jpg','data/uploads/201409/17/goods_8uldyx.jpg','data/uploads/201409/17/thumb_8uldyx.jpg')
+set names utf8
+SHOW COLUMNS FROM goods
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_on_sale,goods_brief,goods_id,is_hot,is_new,add_time,ori_img,goods_img,thumb_img)values ('图片测试1','1234567','7','100','1000','','11','1','1','1','qwerrtyuuiio','0','0','0','1410944359','data/uploads/201409/17/dhaj7h.jpg','data/uploads/201409/17/goods_dhaj7h.jpg','data/uploads/201409/17/thumb_dhaj7h.jpg')
+set names utf8
+SHOW COLUMNS FROM goods
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_on_sale,goods_brief,goods_id,is_hot,is_new,add_time,ori_img,goods_img,thumb_img)values ('图片测试2','1234561','7','100','1000','','11','1','1','1','qwerrtyuuiio','0','0','0','1410944435','data/uploads/201409/17/84emy9.jpg','data/uploads/201409/17/goods_84emy9.jpg','data/uploads/201409/17/thumb_84emy9.jpg')

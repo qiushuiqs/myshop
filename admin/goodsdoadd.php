@@ -40,6 +40,22 @@ $updriver = new UploadHelper();
 $ori_img = $updriver->doUpload('goods_img');
 if($ori_img){
 	$data['ori_img'] = $ori_img;
+
+//处理缩略图文件名	
+	$abs_ori = __ROOT__.$ori_img;
+	
+	$abs_goods = dirname($abs_ori)."/goods_".basename($abs_ori);
+	$goods_img = str_replace(__ROOT__,'',$abs_goods);
+	$abs_thumb = dirname($abs_ori)."/thumb_".basename($abs_ori);
+	$thumb_img = str_replace(__ROOT__,'',$abs_thumb);
+		
+//将上传图片按一下两种格式resample
+//goods picture 300*400 thumb picture: 160*220
+	$data['goods_img'] = $goods_img;
+	$data['thumb_img'] = $thumb_img;
+	
+	ImageHelper::thumbImage($abs_ori, $abs_goods, 300, 400);
+	ImageHelper::thumbImage($abs_ori, $abs_thumb, 160, 220);
 }
 
 if($goods->add($data)){
