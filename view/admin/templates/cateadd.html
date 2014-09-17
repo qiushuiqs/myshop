@@ -28,9 +28,9 @@
         <td class="label">上级分类:</td>
 		<td>
             <select name="parent_id">
-						<option value="0">根目录</option>
+						<option value=0>根目录</option>
 						<?php foreach($cattree as $v){?>
-                        <option value="<?php echo $v['cat_id'];?>"><?php echo str_repeat("&nbsp;",$v['lv']).$v['cat_name'];?></option>
+                        <option value=<?php echo $v['cat_id'];?>><?php echo str_repeat("&nbsp;",$v['lv']).$v['cat_name'];?></option>
                         
 						<?php }?>
 			</select>

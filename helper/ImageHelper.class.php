@@ -4,7 +4,7 @@
 获取图片信息
 加水印
 缩略图
-
+验证码
 */
 
 
@@ -105,7 +105,10 @@ class ImageHelper{
 	
 	//生成缩略图 等比缩放两边留白
 	/*
-		pran 
+		pram pic：原图片
+			 dest: 目标图片存储地址
+			 width: 新图片的宽
+			 hight: 新图片的高
 		return bool
 	*/
 	public static function thumbImage($pic, $dest, $width=200, $hight=200){
@@ -151,6 +154,54 @@ class ImageHelper{
 		
 		return true;
 	}
+	
+	//生成验证码
+	/*
+	
+	*/
+	public static function captcha($width = 90, $height = 30, $mode = 1){
+		//创建画布
+		$cap1 = imagecreatetruecolor($width, $height);
+		$cap2 = imagecreatetruecolor($width, $height);
+		
+		//设置颜色和背景
+		$bg1 = imagecolorallocate($cap1,200,200,200);
+		$bg2 = imagecolorallocate($cap2,200,200,200);
+		imagefill($cap1, 0, 0, $bg1);
+		imagefill($cap2, 0, 0, $bg2);
+		
+		//设置字体和干扰线的颜色
+		$renderfont = imagecolorallocate($cap1,mt_rand(0,150),mt_rand(0,150),mt_rand(0,150));
+		for( $i=1; $i<4; $i++){
+			$linecolor1[$i] = imagecolorallocate($cap1,mt_rand(150,250),mt_rand(150,250),mt_rand(150,250));
+			$linecolor2[$i] = imagecolorallocate($cap2,mt_rand(150,250),mt_rand(150,250),mt_rand(150,250));
+		}
+		
+		//画出验证码
+		$sample = strtoupper('qwertyupasdfghjkzxcvbnm').'qwertyupasdfghjkzxcvbnm23456789';
+		$str = substr(str_shuffle($sample),rand(0,strlen($sample)-4),5);
+
+		imagestring($cap1, 5, 18, 9, $str,$renderfont);
+		
+		//扭曲验证码
+		$offset = mt_rand(1,4);
+		$turn = mt_rand(1,3);
+		for($i=0; $i<$width; $i++){
+			$y = round(sin(2*M_PI/$width*$i*$turn)*$offset);
+			imagecopymerge($cap2, $cap1, $i, $y, $i, 0, 1, $height, 100);
+		}
+		for( $i=1; $i<4; $i++){
+			imageline($cap1, 0,mt_rand($height/3*($i-1),$height/3*$i),$width,mt_rand($height/3*($i-1),$height/3*$i),$linecolor1[$i]);
+			imageline($cap2, 0,mt_rand($height/3*($i-1),$height/3*$i),$width,mt_rand($height/3*($i-1),$height/3*$i),$linecolor2[$i]);
+		}
+		//显示图片
+		header('content-type: image/png');
+		imagepng($cap2);
+		
+		//销毁资源
+		imagedestroy($cap1);
+		imagedestroy($cap2);
+	}	
 }
 /*
 print_r(ImageHelper::imageInfo('../data/uploads/201409/15/test.png'));

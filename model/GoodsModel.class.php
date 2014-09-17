@@ -40,4 +40,11 @@ class GoodsModel extends Model{
 	public function setField($field){
 		$this->field = $field;
 	}
+	//商品编号(goods_sn)自动增加的迭代器
+	public function snGenerator(){
+		$sn = time().mt_rand(10000,99999);
+		$sql = "select * from ".$this->table." where goods_sn = ".(int)$sn;
+		return $this->db->getOne($sql)? snGenerator():$sn;
+	}
+	
 }

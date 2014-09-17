@@ -638,3 +638,53 @@ insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc
 set names utf8
 SHOW COLUMNS FROM goods
 insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_on_sale,goods_brief,goods_id,is_hot,is_new,add_time,ori_img,goods_img,thumb_img)values ('图片测试2','1234561','7','100','1000','','11','1','1','1','qwerrtyuuiio','0','0','0','1410944435','data/uploads/201409/17/84emy9.jpg','data/uploads/201409/17/goods_84emy9.jpg','data/uploads/201409/17/thumb_84emy9.jpg')
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+SHOW COLUMNS FROM goods
+set names utf8
+SHOW COLUMNS FROM goods
+select * from goods where goods_sn = 2147483647
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_on_sale,goods_brief,goods_id,is_hot,add_time,ori_img,goods_img,thumb_img)values ('商品编号自动生成','141096676751137','5','100','100','','11','1','1','1','1','sdsdsdsdsdsdsdsds','0','0','1410966767','data/uploads/201409/17/fvc2go.jpg','data/uploads/201409/17/goods_fvc2go.jpg','data/uploads/201409/17/thumb_fvc2go.jpg')
+set names utf8
+SHOW COLUMNS FROM goods
+select * from goods where goods_sn = 2147483647
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_on_sale,goods_brief,goods_id,is_hot,add_time)values ('商品编号自动生成1','141096694169704','8','100','100','','11','1','1','1','1','sdsdsdsdsdsdsdsds','0','0','1410966941')

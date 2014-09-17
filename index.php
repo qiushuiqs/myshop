@@ -51,32 +51,8 @@ for($i=0; $i<10000; $i++){
 //$test = new TestModel();
 //var_dump($test->reg(array('id'=>'10','name'=>'frontuser')));
 
+ImageHelper::captcha();
 
-class ImageHelper{
-	protected $errMsg;
-	//获取图片信息 --静态类
-	/*
-		parm filename string
-		return array of fileinfo
-	*/
-	public static imageInfo($filename){
-		if(!file_exists($filename)){
-			$errMsg = 'ERR\(imageInfo\)-> Cannot find file: '.$filename;
-			return false;
-		}
-		$arr = getimagesize($filename);
-		$info['w'] = $arr[0];
-		$info['l'] = $arr[1];
-		$info['t'] = substr($arr['mime'],stripos($arr['mime'],'/')+1);
-		
-		return $info;
-	}
-	
-	public waterImage(){
-	}
-}
-
-print_r(ImageHelper::imageInfo());
 /*
 ?>
 <form action ="" method="post" enctype='multipart/form-data'>

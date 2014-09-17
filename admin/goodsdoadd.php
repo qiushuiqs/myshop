@@ -24,6 +24,7 @@ $data['add_time'] = time();
 $goods = new GoodsModel();
 $data = array();
 $goods->setField($goods->showField());
+
 //自动格式化数据
 $data=$goods->_facade($_POST);
 $data['goods_weight'] = $_POST['goods_weight']*$_POST['weight_unit'];
@@ -33,6 +34,10 @@ $data=$goods->_autofill($data);
 if(!$goods->_validate($data)){
 	echo $goods->getErr()[0];
 	exit;
+}
+//若没有goods_sn，自动生成
+if(!$data['goods_sn']){
+	$data['goods_sn'] = $goods->snGenerator();
 }
 
 //上传图片

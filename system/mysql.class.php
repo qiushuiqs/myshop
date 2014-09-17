@@ -105,7 +105,7 @@ class mysql extends db{
 	
 	public function getOne($sql){
 		$rs = $this->query($sql);
-		$row = mysql_fetch_row($rs);
+		$row = mysqli_fetch_row($rs);
 		return $row[0];
 	}
 	
