@@ -688,3 +688,15 @@ set names utf8
 SHOW COLUMNS FROM goods
 select * from goods where goods_sn = 2147483647
 insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_on_sale,goods_brief,goods_id,is_hot,add_time)values ('商品编号自动生成1','141096694169704','8','100','100','','11','1','1','1','1','sdsdsdsdsdsdsdsds','0','0','1410966941')
+set names utf8
+SHOW COLUMNS FROM 
+error
+set names utf8
+SHOW COLUMNS FROM user
+set names utf8
+SHOW COLUMNS FROM user
+set names utf8
+SHOW COLUMNS FROM user
+set names utf8
+SHOW COLUMNS FROM user
+insert into user (username,email,password)values ('sdsd','sdsd','sdsd')

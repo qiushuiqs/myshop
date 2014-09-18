@@ -37,9 +37,11 @@ class GoodsModel extends Model{
 		$sql = 'select * from '. $this->table.' where is_delete = '.$delete;
 		return $this->db->getAll($sql);
 	}
+/*	
 	public function setField($field){
 		$this->field = $field;
 	}
+*/
 	//商品编号(goods_sn)自动增加的迭代器
 	public function snGenerator(){
 		$sn = time().mt_rand(10000,99999);

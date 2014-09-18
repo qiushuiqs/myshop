@@ -129,6 +129,9 @@ class Model{
 		return $this->error;
 	}
 	
+	public function setField($field){
+		$this->field = $field;
+	}
 	/*
 	在model父类里，写最基本的增删改查操作
 	*/
