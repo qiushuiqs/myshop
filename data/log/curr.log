@@ -700,3 +700,63 @@ SHOW COLUMNS FROM user
 set names utf8
 SHOW COLUMNS FROM user
 insert into user (username,email,password)values ('sdsd','sdsd','sdsd')
+set names utf8
+SHOW COLUMNS FROM user
+set names utf8
+SHOW COLUMNS FROM user
+set names utf8
+SHOW COLUMNS FROM user
+set names utf8
+SHOW COLUMNS FROM user
+set names utf8
+SHOW COLUMNS FROM user
+set names utf8
+SHOW COLUMNS FROM user
+set names utf8
+SHOW COLUMNS FROM user
+set names utf8
+SHOW COLUMNS FROM user
+set names utf8
+SHOW COLUMNS FROM user
+set names utf8
+SHOW COLUMNS FROM user
+set names utf8
+SHOW COLUMNS FROM user
+set names utf8
+SHOW COLUMNS FROM user
+set names utf8
+set names utf8
+SHOW COLUMNS FROM user
+set names utf8
+set names utf8
+set names utf8
+set names utf8
+set names utf8
+set names utf8
+set names utf8
+set names utf8
+set names utf8
+select count(*) from user where username='qwert
+error
+set names utf8
+select count(*) from user where username='sddsdd'
+insert into user (username,email,password,repassword,agreement,regtime)values ('sddsdd','wangjian@123.com','6df2406fa64fa4c156f2603518413dc5','qiushui','1','1411055724')
+error
+set names utf8
+SHOW COLUMNS FROM user
+select count(*) from user where username='sdsdd'
+insert into user (username,email,password,regtime)values ('sdsdd','wangjian@add.com','6df2406fa64fa4c156f2603518413dc5','1411055856')
+set names utf8
+SHOW COLUMNS FROM user
+select count(*) from user where username='sdsdsd'
+insert into user (username,email,password,regtime)values ('sdsdsd','wangjian@13.com','6df2406fa64fa4c156f2603518413dc5','1411056083')
+set names utf8
+select count(*) from user where username='sdsdsd'
+set names utf8
+select count(*) from user where username='sdsdsd'
+set names utf8
+SHOW COLUMNS FROM user
+select count(*) from user where username='sdsdsd'
+set names utf8
+SHOW COLUMNS FROM user
+select count(*) from user where username='sdsdsd'

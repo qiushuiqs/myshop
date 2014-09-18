@@ -5,6 +5,7 @@ class Model{
 	protected $table = NULL; //是model所控制的表
 	protected $pk = NULL; //表中的PK
 	protected $field =array();
+	protected $_valid = array();
 	protected $_fill = array();
 	protected $db = NULL; //是引入的mysql对象
 	protected $error = array();
@@ -118,7 +119,14 @@ class Model{
 						return false;
 					}
 					break;
+				case 'email':
+					if(filter_var($data[$v[0]], FILTER_VALIDATE_EMAIL)==false){
+						$this->error[]=$v[2];
+						return false;
+					}
+					break;
 				default:
+					$this->error[]="Undefined Error <br> ";
 					return false;
 			}
 		}

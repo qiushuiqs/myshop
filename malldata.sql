@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `goods` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 
-#用户表
+#用户表 可以加入用户过期天数
 create table user(
 user_id int unsigned not null auto_increment primary key,
 username varchar(20) not null default '',
