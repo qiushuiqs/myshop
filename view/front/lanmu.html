@@ -7,8 +7,8 @@
 <meta name="Keywords" content="">
 <meta name="Description" content="">
 <title>男士正装_布尔正装商城-职业装|面试正装|求职正装|男士正装|女士正装|正装衬衫-源于北京,服务全国</title>
-<link rel="shortcut icon" href="http://www.zhongyis.com/favicon.ico">
-<link rel="icon" href="http://www.zhongyis.com/animated_favicon.gif" type="image/gif">
+<link rel="shortcut icon" href="http:///favicon.ico">
+<link rel="icon" href="http:///animated_favicon.gif" type="image/gif">
 </head>
 <body>
 <link type="text/css" rel="stylesheet" href="../view/front/css/style.css">
@@ -122,7 +122,7 @@
 		--&gt;
 		
 		</script>
-        <form onsubmit="return checkSearchForm()" action="http://www.zhongyis.com/search.php" method="get" name="searchForm" id="searchForm">
+        <form onsubmit="return checkSearchForm()" action="search.php" method="get" name="searchForm" id="searchForm">
         <select style="vertical-align:middle" class="txt_style_1" id="category" name="category">
       <option value="0">所有分类</option>
           <option value="103">待加分类2</option><option value="148">配饰</option><option value="36">&nbsp;&nbsp;&nbsp;&nbsp;领带</option><option value="147">&nbsp;&nbsp;&nbsp;&nbsp;皮带</option><option value="42">女士正装</option><option value="135">&nbsp;&nbsp;&nbsp;&nbsp;衬衫</option><option value="136">&nbsp;&nbsp;&nbsp;&nbsp;其它</option><option value="134">&nbsp;&nbsp;&nbsp;&nbsp;套装</option><option value="149">断码特惠</option><option value="66">正装租赁</option><option value="17">男士正装</option><option value="18">&nbsp;&nbsp;&nbsp;&nbsp;西装</option><option value="25">&nbsp;&nbsp;&nbsp;&nbsp;衬衫</option><option value="83">正装鞋</option><option value="84">&nbsp;&nbsp;&nbsp;&nbsp;男士皮鞋</option><option value="89">&nbsp;&nbsp;&nbsp;&nbsp;女士皮鞋</option><option value="154">商务大衣</option><option value="128">其它</option>        </select>
@@ -166,43 +166,11 @@
             	<div class="lib_top">产品分类</div>
                 <div class="lib_mid">
                 	<ul>
-                                        	<li class="cate_level_1"><a href="#">男士正装</a></li>
-                                                          <li class="cate_level_2"><a href="#">西装</a></li>
-                             
-                           
-                                                          <li class="cate_level_2"><a href="#">衬衫</a></li>
-                             
-                           
-                                                                      	<li class="cate_level_1"><a href="#">女士正装</a></li>
-                                                          <li class="cate_level_2"><a href="#">套装</a></li>
-                             
-                           
-                                                          <li class="cate_level_2"><a href="#">衬衫</a></li>
-                             
-                           
-                                                          <li class="cate_level_2"><a href="#">其它</a></li>
-                             
-                           
-                                                                      	<li class="cate_level_1"><a href="#">正装租赁</a></li>
-                                                                      	<li class="cate_level_1"><a href="#">正装鞋</a></li>
-                                                          <li class="cate_level_2"><a href="#">男士皮鞋</a></li>
-                             
-                           
-                                                          <li class="cate_level_2"><a href="#">女士皮鞋</a></li>
-                             
-                           
-                                                                      	<li class="cate_level_1"><a href="#">待加分类2</a></li>
-                                                                      	<li class="cate_level_1"><a href="#">配饰</a></li>
-                                                          <li class="cate_level_2"><a href="#">领带</a></li>
-                             
-                           
-                                                          <li class="cate_level_2"><a href="#">皮带</a></li>
-                             
-                           
-                                                                      	<li class="cate_level_1"><a href="#">断码特惠</a></li>
-                                                                      	<li class="cate_level_1"><a href="#">商务大衣</a></li>
-                                                                      	<li class="cate_level_1"><a href="#">其它</a></li>
+                        <?php foreach($cateList as $v){?>     
+							 
+						<li class="cate_level_<?php echo $v['lv'];?>"><a href="category.php?cat_id=<?php echo $v['cat_id'];?>"><?php echo $v['cat_name'];?></a></li>
                                                    
+                        <?php } ?>                           
                     </ul>
                 </div>
                 <div class="lib_down"></div>
@@ -302,7 +270,11 @@
    
          
   
-            当前位置: <a href="#">首页</a> <code>&gt;</code> <a href="#">男士正装</a> <div class="blank"></div>
+            当前位置: <a href="index.php">首页</a> 
+			<?php foreach($cateNav as $v){?>
+			<code>&gt;</code> <a href="category.php?cat_id=<?php echo $v['cat_id'];?>"><?php echo $v['cat_name'];?></a> 
+			<?php }?>
+			<div class="blank"></div>
     
            
            
@@ -337,178 +309,24 @@
     </div></form>
 </div>
    
-    <form onsubmit="return compareGoods(this);" method="post" action="http://www.zhongyis.com/compare.php" name="compareForm">
+    <form method="post" action="compare.php" name="compareForm">
      
- 
-  
-                		<div class="grid">
-                           						                    	<div class="goodsItem">
+					<div class="grid">
+                         <?php foreach($goodsList as $v){?>
+						<div class="goodsItem">
                         	<div class="goodsPic">
 							
-                        	<a href="#"><img title="两扣双开衩平驳头斜兜男..." class="zoom" src="../view/front/images/315_G_1346659439860.jpg"><img alt="两扣双开衩平驳头斜兜男..." src="../view/front/images/315_thumb_G_1346659439530.jpg"></a>
+                        	<a href="goods.php?goods_id=<?php echo $v['goods_id'];?>"><img title="<?php echo $v['goods_name'];?>" class="zoom" src="<?php echo '../'.$v['goods_img'];?>"><img alt="<?php echo $v['goods_name'];?>" src="<?php echo '../'.$v['goods_img'];?>"></a>
                             </div>
                             <div class="goodsInfo">
                             	
-                            	<div class="goodsSn"><a class="f_pname" title="两扣双开衩平驳头斜兜男士西服套装3312/纯藏青色人字纹/羊毛+涤纶" href="#">两扣双开衩平驳头斜兜男...</a></div>
-                                                            	 <span class="f_gray">市场价：</span><font class="f_market">￥1598元</font><br>
-                                                                                                本店价：<font class="f_shop">￥799元</font><br>
+                            	<div class="goodsSn"><a class="f_pname" title="<?php echo $v['goods_name'];?>" href="goods.php?goods_id=<?php echo $v['goods_id'];?>"><?php echo mb_substr($v['goods_name'],0,12,'UTF-8'); ?>...</a></div>
+                                                            	 <span class="f_gray">市场价：</span><font class="f_market">￥<?php echo $v['market_price'];?>元</font><br>
+                                                                                                本店价：<font class="f_shop">￥<?php echo $v['shop_price'];?>元</font><br>
                                                             </div>
-                        </div>
-                           
-                           						                    	<div class="goodsItem">
-                        	<div class="goodsPic">
-							
-                        	<a href="#"><img title="纯羊毛一粒扣枪驳领纯黑..." class="zoom" src="../view/front/images/313_G_1346420329195.jpg"><img alt="纯羊毛一粒扣枪驳领纯黑..." src="../view/front/images/313_thumb_G_1346420329070.jpg"></a>
-                            </div>
-                            <div class="goodsInfo">
-                            	
-                            	<div class="goodsSn"><a class="f_pname" title="纯羊毛一粒扣枪驳领纯黑西服套装" href="#">纯羊毛一粒扣枪驳领纯黑...</a></div>
-                                                            	 <span class="f_gray">市场价：</span><font class="f_market">￥3980元</font><br>
-                                                                                                促销价：<font class="f_shop">￥999元</font><br>
-                                                            </div>
-                        </div>
-                           
-                           						                    	<div class="goodsItem">
-                        	<div class="goodsPic">
-							
-                        	<a href="#"><img title="两扣单开衩枪驳领修身男..." class="zoom" src="../view/front/images/317_G_1346661429774.jpg"><img alt="两扣单开衩枪驳领修身男..." src="../view/front/images/317_thumb_G_1346661429032.jpg"></a>
-                            </div>
-                            <div class="goodsInfo">
-                            	
-                            	<div class="goodsSn"><a class="f_pname" title="两扣单开衩枪驳领修身男士西服套装ZYS900/纯深藏青色/羊毛+涤纶" href="#">两扣单开衩枪驳领修身男...</a></div>
-                                                            	 <span class="f_gray">市场价：</span><font class="f_market">￥1398元</font><br>
-                                                                                                本店价：<font class="f_shop">￥699元</font><br>
-                                                            </div>
-                        </div>
-                           
-                           						                    	<div class="goodsItem">
-                        	<div class="goodsPic">
-							
-                        	<a href="#"><img title="两扣单开衩枪驳领修身男..." class="zoom" src="../view/front/images/318_G_1346662515590.jpg"><img alt="两扣单开衩枪驳领修身男..." src="../view/front/images/318_thumb_G_1346662515966.jpg"></a>
-                            </div>
-                            <div class="goodsInfo">
-                            	
-                            	<div class="goodsSn"><a class="f_pname" title="两扣单开衩枪驳领修身男士西服套装ZYS6028/深藏青蓝条纹" href="#">两扣单开衩枪驳领修身男...</a></div>
-                                                            	 <span class="f_gray">市场价：</span><font class="f_market">￥1398元</font><br>
-                                                                                                本店价：<font class="f_shop">￥699元</font><br>
-                                                            </div>
-                        </div>
-                           
-                           						                    	<div class="goodsItem">
-                        	<div class="goodsPic">
-							
-                        	<a href="#"><img title="两扣单开衩枪驳领斜兜男..." class="zoom" src="../view/front/images/316_G_1346660690482.jpg"><img alt="两扣单开衩枪驳领斜兜男..." src="../view/front/images/316_thumb_G_1346660690951.jpg"></a>
-                            </div>
-                            <div class="goodsInfo">
-                            	
-                            	<div class="goodsSn"><a class="f_pname" title="两扣单开衩枪驳领斜兜男士西服套装ZW03/黑色条纹/纯羊毛" href="#">两扣单开衩枪驳领斜兜男...</a></div>
-                                                            	 <span class="f_gray">市场价：</span><font class="f_market">￥2598元</font><br>
-                                                                                                本店价：<font class="f_shop">￥1299元</font><br>
-                                                            </div>
-                        </div>
-                           
-                           						                    	<div class="goodsItem">
-                        	<div class="goodsPic">
-							
-                        	<a href="#"><img title="两扣双开衩枪驳领金属扣..." class="zoom" src="../view/front/images/319_G_1346663332333.jpg"><img alt="两扣双开衩枪驳领金属扣..." src="../view/front/images/319_thumb_G_1346663332080.jpg"></a>
-                            </div>
-                            <div class="goodsInfo">
-                            	
-                            	<div class="goodsSn"><a class="f_pname" title="两扣双开衩枪驳领金属扣高档男士西服套装PA81206/灰色毛呢/羊毛+桑蚕丝" href="#">两扣双开衩枪驳领金属扣...</a></div>
-                                                            	 <span class="f_gray">市场价：</span><font class="f_market">￥4380元</font><br>
-                                                                                                本店价：<font class="f_shop">￥2190元</font><br>
-                                                            </div>
-                        </div>
-                           
-                           						                    	<div class="goodsItem">
-                        	<div class="goodsPic">
-							
-                        	<a href="#"><img title="两扣双开衩枪驳领金属扣..." class="zoom" src="../view/front/images/320_G_1346663693184.jpg"><img alt="两扣双开衩枪驳领金属扣..." src="../view/front/images/320_thumb_G_1346663693359.jpg"></a>
-                            </div>
-                            <div class="goodsInfo">
-                            	
-                            	<div class="goodsSn"><a class="f_pname" title="两扣双开衩枪驳领金属扣高档男士西服套装8769/黑色暗格/羊毛+桑蚕丝" href="#">两扣双开衩枪驳领金属扣...</a></div>
-                                                            	 <span class="f_gray">市场价：</span><font class="f_market">￥3380元</font><br>
-                                                                                                本店价：<font class="f_shop">￥1690元</font><br>
-                                                            </div>
-                        </div>
-                           
-                           						                    	<div class="goodsItem">
-                        	<div class="goodsPic">
-							
-                        	<a href="#"><img title="两扣平驳领花灰色小格纹..." class="zoom" src="../view/front/images/321_G_1346725321345.jpg"><img alt="两扣平驳领花灰色小格纹..." src="../view/front/images/321_thumb_G_1346725321965.jpg"></a>
-                            </div>
-                            <div class="goodsInfo">
-                            	
-                            	<div class="goodsSn"><a class="f_pname" title="两扣平驳领花灰色小格纹男士休闲单西D6951" href="#">两扣平驳领花灰色小格纹...</a></div>
-                                                            	 <span class="f_gray">市场价：</span><font class="f_market">￥2180元</font><br>
-                                                                                                本店价：<font class="f_shop">￥1090元</font><br>
-                                                            </div>
-                        </div>
-                           
-                           						                    	<div class="goodsItem">
-                        	<div class="goodsPic">
-							
-                        	<a href="#"><img title="两扣平驳领棕色格纹男士..." class="zoom" src="../view/front/images/322_G_1346725902552.jpg"><img alt="两扣平驳领棕色格纹男士..." src="../view/front/images/322_thumb_G_1346725902236.jpg"></a>
-                            </div>
-                            <div class="goodsInfo">
-                            	
-                            	<div class="goodsSn"><a class="f_pname" title="两扣平驳领棕色格纹男士休闲单西D6959" href="#">两扣平驳领棕色格纹男士...</a></div>
-                                                            	 <span class="f_gray">市场价：</span><font class="f_market">￥2980元</font><br>
-                                                                                                本店价：<font class="f_shop">￥1490元</font><br>
-                                                            </div>
-                        </div>
-                           
-                           						                    	<div class="goodsItem">
-                        	<div class="goodsPic">
-							
-                        	<a href="#"><img title="藏蓝色暗条纹男士西裤3..." class="zoom" src="../view/front/images/323_G_1346732289399.jpg"><img alt="藏蓝色暗条纹男士西裤3..." src="../view/front/images/323_thumb_G_1346732289048.jpg"></a>
-                            </div>
-                            <div class="goodsInfo">
-                            	
-                            	<div class="goodsSn"><a class="f_pname" title="藏蓝色暗条纹男士西裤3312B" href="#">藏蓝色暗条纹男士西裤3...</a></div>
-                                                            	 <span class="f_gray">市场价：</span><font class="f_market">￥520元</font><br>
-                                                                                                本店价：<font class="f_shop">￥260元</font><br>
-                                                            </div>
-                        </div>
-                           
-                           						                    	<div class="goodsItem">
-                        	<div class="goodsPic">
-							
-                        	<a href="#"><img title="纯羊毛纯黑色修身男士西..." class="zoom" src="../view/front/images/324_G_1346733577314.jpg"><img alt="纯羊毛纯黑色修身男士西..." src="../view/front/images/324_thumb_G_1346733577085.jpg"></a>
-                            </div>
-                            <div class="goodsInfo">
-                            	
-                            	<div class="goodsSn"><a class="f_pname" title="纯羊毛纯黑色修身男士西裤ZW02B" href="#">纯羊毛纯黑色修身男士西...</a></div>
-                                                            	 <span class="f_gray">市场价：</span><font class="f_market">￥660元</font><br>
-                                                                                                本店价：<font class="f_shop">￥330元</font><br>
-                                                            </div>
-                        </div>
-                           
-                           						                    	<div class="goodsItem">
-                        	<div class="goodsPic">
-							
-                        	<a href="#"><img title="毛涤深藏蓝色男士西裤Z..." class="zoom" src="../view/front/images/326_G_1346734546410.jpg"><img alt="毛涤深藏蓝色男士西裤Z..." src="../view/front/images/326_thumb_G_1346734546040.jpg"></a>
-                            </div>
-                            <div class="goodsInfo">
-                            	
-                            	<div class="goodsSn"><a class="f_pname" title="毛涤深藏蓝色男士西裤ZYS900B" href="#">毛涤深藏蓝色男士西裤Z...</a></div>
-                                                            	 <span class="f_gray">市场价：</span><font class="f_market">￥420元</font><br>
-                                                                                                本店价：<font class="f_shop">￥210元</font><br>
-                                                            </div>
-                        </div>
-                           
-                                                          
+						</div>
+						<?php }?>
                     </div>
-        
- 
-  
-    
-  
-  
-  
-    
-                 
                  
     </form>
     
@@ -540,7 +358,7 @@ var select_spe = "请选择商品属性";
                 </div>            
             </div>
             <div style=" height:25px; background:#e6eaf3;height:25px; overflow:hidden">
-<form method="get" action="http://www.zhongyis.com/category.php" name="selectPageForm">
+<form method="get" action="http:///category.php" name="selectPageForm">
  <div class="pagebar" id="pager">
   <span style="margin-right:10px;" class="f_l f6">总计 <b>54</b>  个记录</span>
                       <span class="page_now">1</span>
@@ -549,7 +367,7 @@ var select_spe = "请选择商品属性";
                       <a href="#">[4]</a>
                       <a href="#">[5]</a>
             
-  <a href="http://www.zhongyis.com/category.php?id=17&amp;price_min=0&amp;price_max=0&amp;page=2&amp;sort=last_update&amp;order=DESC" class="next">下一页</a>    </div>
+  <a href="http:///category.php?id=17&amp;price_min=0&amp;price_max=0&amp;page=2&amp;sort=last_update&amp;order=DESC" class="next">下一页</a>    </div>
 </form>
 <script language="JavaScript" type="Text/Javascript">
 &lt;!--
@@ -618,31 +436,31 @@ function selectPage(sel)
 	<div class="foot_nav">
     	<div class="block">
              	<div class="nav_list">
-                        <a href="http://www.zhongyis.com/article.php?id=2" style="padding:0 3px 0 5px">隐私保护</a>  
+                        <a href="http:///article.php?id=2" style="padding:0 3px 0 5px">隐私保护</a>  
             
             
                           |
-                                    <a href="http://www.zhongyis.com/article.php?id=5" style="padding:0 3px 0 5px">公司简介</a>  
+                                    <a href="http:///article.php?id=5" style="padding:0 3px 0 5px">公司简介</a>  
             
             
                           |
-                                    <a href="http://www.zhongyis.com/article.php?id=4" style="padding:0 3px 0 5px">联系我们</a>  
+                                    <a href="http:///article.php?id=4" style="padding:0 3px 0 5px">联系我们</a>  
             
             
                           |
-                                    <a href="http://www.zhongyis.com/article.php?id=3" style="padding:0 3px 0 5px">在线客服</a>  
+                                    <a href="http:///article.php?id=3" style="padding:0 3px 0 5px">在线客服</a>  
             
             
                           |
-                                    <a href="http://www.zhongyis.com/article.php?id=1" style="padding:0 3px 0 5px">加盟政策</a>  
+                                    <a href="http:///article.php?id=1" style="padding:0 3px 0 5px">加盟政策</a>  
             
             
                           |
-                                    <a href="http://www.zhongyis.com/article.php?id=57" style="padding:0 3px 0 5px">团购优惠</a>  
+                                    <a href="http:///article.php?id=57" style="padding:0 3px 0 5px">团购优惠</a>  
             
             
                           |
-                                    <a href="http://www.zhongyis.com/myship.php" style="padding:0 3px 0 5px">配送方式</a>  
+                                    <a href="http:///myship.php" style="padding:0 3px 0 5px">配送方式</a>  
             
             
                          

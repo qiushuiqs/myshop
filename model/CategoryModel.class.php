@@ -5,17 +5,18 @@
 class CategoryModel extends Model{
 	protected $table = 'category';
 	
-	//添加category
+/*	//添加category
 	public function add($data){
 		$this->db->autoExecute($data, $this->table);
 	}
+*/	
 	//获取本表下所有的数据
 	public function getList(){
 		$sql = "select cat_id, cat_name, dscrpt, parent_id from ".$this->table;
 		return $this->db->getAll($sql);
 	}
 	/*
-		getCatTree
+		getCatTree 找cate所有子栏目信息
 		para: array $arr, 被查找的信息
 			  int $id   需要列举的ID
 			  int $lv=0 项目开头缩进
@@ -61,7 +62,7 @@ class CategoryModel extends Model{
 				}
 			}
 		}
-		return $tree;
+		return array_reverse($tree);
 	}
 	
 	//根据主键删除数据

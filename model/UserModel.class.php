@@ -34,12 +34,32 @@ class UserModel extends Model{
 	}	
 
 	public function reg($data){
-		$sql = 'select count(*) from '.$this->table.' where username=\''.$data['username'].'\'';
-		if($this->db->getOne($sql)){
-			$this->error[] = "The username was occupied <br>";
-			return false;
-		}
 		$data['password'] = $this->encodeM5($data['password']);
 		return parent::add($data);
 	}
+	
+	public function checkUser($username, $password=''){
+		if($password===''){
+			$sql = 'select count(*) from '.$this->table.' where username=\''.$username.'\'';
+			if($this->db->getOne($sql)){
+				$this->error[] = "The username was occupied <br>";
+				return false;
+			}
+			return true;
+		}else{
+			$sql = 'select * from '.$this->table.' where username=\''.$username.'\'';
+			$res = $this->db->getRow($sql);
+			if(!isset($res)){
+				$this->error[] = "The username was not exist <br>";
+				return false;
+			}
+			if($res['password']!=$this->encodeM5($password)){
+				$this->error[] = "The username and password are not matched <br>";
+				return false;
+			}
+			unset($res['password']);
+			return $res;
+		}
+	}
+	
 }

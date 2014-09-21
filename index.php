@@ -51,7 +51,7 @@ for($i=0; $i<10000; $i++){
 //$test = new TestModel();
 //var_dump($test->reg(array('id'=>'10','name'=>'frontuser')));
 
-ImageHelper::captcha();
+//ImageHelper::captcha();
 
 /*
 ?>
@@ -61,3 +61,4 @@ file: <input type='file' name='file' /><br/>
 <input type='submit' name='dosubmit' value='OK' />
 </form>
 */
+include(__ROOT__.'view/front/index.html');

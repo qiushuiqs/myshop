@@ -26,10 +26,11 @@ if(!$user->_validate($data)){
 	$data = $user->_facade($data);
 }
 
-if(!$user->reg($data)){
+if(!$user->checkUser($data['username'])){
 	list($error) = $user->getErr();
 	$msg = $error;
 }else{
+	$user->reg($data);
 	$msg .= "Register Sucessfully!";
 }
 include('../view/front/msg.html');

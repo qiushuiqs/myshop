@@ -161,11 +161,11 @@
   <div class="usBox_1 f_l">
    <div class="logtitle"></div>
    <div style="color:#999; padding:30px 20px 10px 30px;">已注册用户请从这里登录</div>
-   <form onsubmit="return userLogin()" method="post" action="./images/denglu.htm" name="formLogin">
+   <form method="post" action="user.php" name="formLogin">
         <table width="100%" cellspacing="5" cellpadding="3" border="0" align="left" class="user_table">
           <tbody><tr>
             <td width="15%" align="right">用户名</td>
-            <td width="85%"><input type="text" class="inputBg" name="username"></td>
+            <td width="85%"><input type="text" class="inputBg" name="username" value='<?php echo $keepuser;?>'></td>
           </tr>
           <tr>
             <td align="right">密码</td>
@@ -174,15 +174,14 @@
             </td>
           </tr>
                     <tr>
-            <td colspan="2"><input type="checkbox" id="remember" name="remember" value="1"><label for="remember">请保存我这次的登录信息。</label></td>
+            <td colspan="2"><input type="checkbox" id="remember" name="remember" value="1"><label for="remember">记住用户名</label></td>
           </tr>
           <tr>
             <td>&nbsp;</td>
             <td align="left">
             <input type="hidden" value="act_login" name="act">
             <input type="hidden" value="http://www.zhongyis.com/category.php?id=17" name="back_act">
-            <input type="submit" class="us_Submit" value="" name="submit">
-			<a name="fastlogin" href="#"><img width="115" height="25" src="../view/front/images/alipayLogin_new.png"></a>
+            <input type="submit" class="us_Submit" value="登陆" name="submit">
             </td>
           </tr>
 	  <tr><td></td>

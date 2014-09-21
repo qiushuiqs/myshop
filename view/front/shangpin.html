@@ -186,7 +186,11 @@
 	<div class="layout_4">
         
         <div class="layout_right"> 
-		         当前位置: <a href="#">首页</a> <code>&gt;</code> <a href="#">男士正装</a> <code>&gt;</code> 两扣双开衩平驳头斜兜男士西服套装3312/纯藏青色人字纹/羊毛+涤纶 <div class="blank"></div>
+		         当前位置: <a href="index.php">首页</a> 
+				<?php foreach($cateNav as $v){?>
+				<code>&gt;</code> <a href="category.php?cat_id=<?php echo $v['cat_id'];?>"><?php echo $v['cat_name'];?></a> 
+				<?php }?>
+				<code>&gt;</code> <?php echo $goodsInfo['goods_name'];?><div class="blank"></div>
         
         	<div class="shop_right_lib_comm" style="border-top:1px solid #e6e6e6">
             	<div class="innerbox clearfix">
@@ -198,7 +202,7 @@
                                 <div class="gcontent" id="goods_gallery" style="overflow: hidden; width: 80px; height: 400px;">
                                 	<table>
                                                                         <tbody><tr>
-                                    <td><div class="curr"><a href="#" onmouseover="sw_goodsimg(this)"><img src="../view/front/images/315_P_1346659439104.jpg" alt="两扣双开衩平驳头斜兜男士西服套装3312/纯藏青色人字纹/羊毛+涤纶"></a></div></td>
+                                    <td><div class="curr"><a href="#" onmouseover="sw_goodsimg(this)"><img src="<?php echo '../'.$goodsInfo['goods_img'];?>" alt="<?php echo $goodsInfo['goods_name'];?>"></a></div></td>
                                     </tr>
                                                                         </tbody></table>
                                 </div>
@@ -226,7 +230,7 @@
                     	<div class="goods_pics_polo f_l">
                         	<div class="goods_big_img" style="position:relative; border:1px solid #e6e6e6">
                              <a href="#" class="jqzoom" id="picbox" style="outline-style: none; cursor: crosshair; CrystalGenResPlugins: block; height: 400px; width: 300px;" title="">                        	
-                              <img src="../view/front/images/315_P_1346659439104.jpg" alt="两扣双开衩平驳头斜兜男士西服套装3312/纯藏青色人字纹/羊毛+涤纶" class="goodsimg" id="goods_bimg" style="position: absolute; top: 0px; left: 0px;" title="">                             </a>                             </div>
+                              <img src="<?php echo '../'.$goodsInfo['goods_img'];?>" alt="<?php echo $goodsInfo['goods_name'];?>" class="goodsimg" id="goods_bimg" style="position: absolute; top: 0px; left: 0px;" title="">                             </a>                             </div>
                              <a style="line-height:25px; CrystalGenResPlugins:block; width:400px; height:20px; text-align:center;" href="javascript:;" onclick="window.open('gallery.php?id=315'); return false;"><img src="../view/front/images/biao3.gif"> 点击查看大图</a>
                           
                              
@@ -237,7 +241,7 @@
                         	<div class="textInfo">
      <form action="javascript:addToCart(315)" method="post" name="ECS_FORMBUY" id="ECS_FORMBUY">
 		 <div class="clearfix" style="font-size:14px; font-weight:bold;  color:#333">
-      两扣双开衩平驳头斜兜男士西服套装3312/纯藏青色人字纹/羊毛+涤纶      
+      <?php echo $goodsInfo['goods_name'];?>      
 			</div>
       <ul>
        
@@ -268,12 +272,12 @@
        
                    <li class="clearfix">
        <dd>
-       <strong>本店售价：</strong><font class="shop1" id="ECS_SHOPPRICE">￥799元</font>
+       <strong>本店售价：</strong><font class="shop1" id="ECS_SHOPPRICE">￥<?php echo $goodsInfo['shop_price'];?>元</font>
         </dd>
       </li>
                      <li class="clearfix">
        <dd>
-       <strong style="color:#999">市场价格：</strong><font class="market">￥1598元</font>
+       <strong style="color:#999">市场价格：</strong><font class="market">￥<?php echo $goodsInfo['market_price'];?>元</font>
          </dd>
       </li>
               
@@ -360,7 +364,7 @@
         </div>
        </div>
       <div class="f_l" style="padding-left:25px; border:none">
-       <strong style=" font-weight: bold; color:#666; ">商品总价：</strong><font id="ECS_GOODS_AMOUNT" class="shop">￥799元</font>
+       <strong style=" font-weight: bold; color:#666; ">商品总价：</strong><font id="ECS_GOODS_AMOUNT" class="shop">￥<?php echo $goodsInfo['shop_price'];?>元</font>
       </div>
     <div class="f_r">
       <a href="#"><img src="../view/front/images/bnt_cat.gif"></a>
@@ -382,18 +386,7 @@
                         	<div class="tabItem f_l">
                             <div style="font-size:14px; color:#999; font-weight:bold; border-bottom:1px solid #bebebe; padding-bottom:8px; padding-top:10px;">商品说明</div>
                             <div class="blank"></div>
-                            <div>
-                            <p><img width="750" height="1100" alt="" src="../view/front/images/3312-1.JPG"></p>
-<p>&nbsp;</p>
-<p><img width="750" height="1100" alt="" src="../view/front/images/3312-2.jpg"></p>
-<p>&nbsp;</p>
-<p><img width="750" height="1100" alt="" src="../view/front/images/3312-3.JPG"></p>
-<p>&nbsp;</p>
-<p><img width="750" height="1100" alt="" src="../view/front/images/3312-4.JPG"></p>
-<p>&nbsp;</p>
-<p><img width="750" height="1100" alt="" src="../view/front/images/3312-5.JPG"></p>
-<p>&nbsp;</p>
-<p><img width="750" height="600" alt="" src="../view/front/images/3312.jpg"></p>                            </div>
+                            
                             </div>
                         </div>
                   

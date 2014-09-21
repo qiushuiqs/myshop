@@ -38,6 +38,7 @@ class GoodsModel extends Model{
 		return $this->db->getAll($sql);
 	}
 /*	
+	已放置model类中
 	public function setField($field){
 		$this->field = $field;
 	}
@@ -49,4 +50,39 @@ class GoodsModel extends Model{
 		return $this->db->getOne($sql)? snGenerator():$sn;
 	}
 	
+	/*
+		取出前N（5）个新品，根据加入的时间
+		parm int number of new goods
+		return array data
+	*/
+	public function getNewGoods($n = 5){
+		$sql = 'select goods_id, goods_name, shop_price, market_price, thumb_img, add_time from '.$this->table.
+		' where is_new = 1 order by add_time desc limit '.$n;
+		$data = $this->db->getAll($sql);
+		return $data;
+	}
+	/*
+		取出指定栏目的商品。包括其子栏目的商品
+		parm int category ID
+			 int number of goods
+		return array all the goods in terms of category IDs
+	*/
+	public function goodsByCate($cateID,$n = null){
+		$cateObj = new CategoryModel();
+		$allCates = $cateObj->select();
+		$cateList = $cateObj->getCatTree($allCates,$cateID);
+		$cateIDList = array($cateID);
+		foreach($cateList as $v){
+			$cateIDList[] = $v['cat_id'];
+		}
+		
+		$instring = implode(',', $cateIDList);
+		$sql = 'select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from '.$this->table.
+		' where cat_id in ('.$instring.') order by add_time desc';
+		if(is_numeric($n)){
+			$sql .= ' limit '.$n;
+		}
+		$data = $this->db->getAll($sql);
+		return $data;
+	}
 }
