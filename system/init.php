@@ -33,6 +33,8 @@ $_GET = _addslashes($_GET);
 $_POST = _addslashes($_POST);
 $_COOKIE = _addslashes($_COOKIE);
 
+//启动session
+session_start();
 
 //设置报错级别
 if(defined('DEBUG')){

@@ -5,7 +5,7 @@ require('../system/init.php');
 
 
 //删除SESSION
-session_start();
+
 // 重置会话中的所有变量
 $_SESSION = array();
 // 如果要清理的更彻底，那么同时删除会话 cookie

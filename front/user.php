@@ -22,7 +22,6 @@ if(!isset($_POST['act'])){
 		$msg = $error;
 		include(__ROOT__.'view/front/msg.html');
 	}else{
-		session_start();
 		$_SESSION = $res;
 		$msg='login successfully';
 		//用户选择记住用户名，保存用户名7天

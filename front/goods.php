@@ -5,7 +5,7 @@
 
 define('ACC',true);
 require('../system/init.php');
-session_start();
+
 $cateObj = new CategoryModel();
 $goodsObj = new GoodsModel();
 
@@ -19,6 +19,7 @@ if(!isset($goodsInfo)){
 $catID = $goodsInfo['cat_id'];
 $allCates =$cateObj->select();
 $cateNav = $cateObj->getTree($allCates,$catID);
+$cateInfo = $cateObj->find($catID);
 //print_r($cateNav);
 
 include(__ROOT__.'view/front/shangpin.html');

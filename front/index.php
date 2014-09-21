@@ -5,7 +5,7 @@
 
 define('ACC',true);
 require('../system/init.php');
-session_start();
+
 $goodsObj = new GoodsModel();
 
 
