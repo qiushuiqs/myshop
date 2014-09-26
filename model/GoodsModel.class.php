@@ -85,4 +85,19 @@ class GoodsModel extends Model{
 		$data = $this->db->getAll($sql);
 		return $data;
 	}
+	/*
+		根据购物车返回完整商品信息
+		parm array list of items in cart
+		return array list of items with more information about goods
+	*/
+	public function goodsByCart($cart){
+		foreach($cart as $k=>$v){
+			$sql = "select market_price, thumb_img from ".$this->table.' where goods_id='.$k;
+			$data = $this->db->getRow($sql);
+			$cart[$k]['market_price'] = $data['market_price'];
+			$cart[$k]['thumb_img'] = $data['thumb_img'];
+		}
+		
+		return $cart;
+	}
 }
