@@ -70,6 +70,7 @@ class Model{
 		}
 		$this->error=array();
 		foreach($this->_valid as $k=>$v){
+			$pass = 0;
 			switch($v[1]){
 				case 1:
 					if(!isset($data[$v[0]])|| empty($data[$v[0]])){
@@ -79,55 +80,57 @@ class Model{
 					break;
 				case 0:
 					if(!isset($data[$v[0]])){
-						continue;
+						$pass = 1;
 					}
 					break;
 				case 2:
 					if(empty($data[$v[0]])){
-						continue;
+						$pass = 1;
 					}
 					break;
 			}
-			switch($v[3]){
-				case 'require':
-					if(empty($data[$v[0]])){
-						$this->error[]=$v[2];
+			if(!$pass){
+				switch($v[3]){
+					case 'require':
+						if(empty($data[$v[0]])){
+							$this->error[]=$v[2];
+							return false;
+						}
+						break;
+					case 'number':
+						if(!is_numeric($data[$v[0]])){
+							$this->error[]=$v[2];
+							return false;
+						}
+						break;
+					case 'in':
+						if(!in_array($data[$v[0]],$v[4])){
+							$this->error[]=$v[2];
+							return false;
+						}
+						break;
+					case 'between':
+						if($data[$v[0]]<$v[4][0] || $data[$v[0]]>$v[4][1]){
+							$this->error[]=$v[2];
+							return false;
+						}
+						break;
+					case 'length':
+						if(strlen($data[$v[0]])<$v[4][0] || strlen($data[$v[0]])>$v[4][1]){
+							$this->error[]=$v[2];
+							return false;
+						}
+						break;
+					case 'email':
+						if(filter_var($data[$v[0]], FILTER_VALIDATE_EMAIL)==false){
+							$this->error[]=$v[2];
+							return false;
+						}
+						break;
+					default:
+						$this->error[]="Undefined Error <br> ";
 						return false;
-					}
-					break;
-				case 'number':
-					if(!is_numeric($data[$v[0]])){
-						$this->error[]=$v[2];
-						return false;
-					}
-					break;
-				case 'in':
-					if(!in_array($data[$v[0]],$v[4])){
-						$this->error[]=$v[2];
-						return false;
-					}
-					break;
-				case 'between':
-					if($data[$v[0]]<$v[4][0] || $data[$v[0]]>$v[4][1]){
-						$this->error[]=$v[2];
-						return false;
-					}
-					break;
-				case 'length':
-					if(strlen($data[$v[0]])<$v[4][0] || strlen($data[$v[0]])>$v[4][1]){
-						$this->error[]=$v[2];
-						return false;
-					}
-					break;
-				case 'email':
-					if(filter_var($data[$v[0]], FILTER_VALIDATE_EMAIL)==false){
-						$this->error[]=$v[2];
-						return false;
-					}
-					break;
-				default:
-					$this->error[]="Undefined Error <br> ";
-					return false;
+				}
 			}
 		}
 		return true;

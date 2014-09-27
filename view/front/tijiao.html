@@ -24,8 +24,8 @@
 
 <div class="block">  
 当前位置: <a href=".">首页</a> <code>&gt;</code> 购物流程 <div class="blank"></div>
-  
-                  <form onsubmit="return checkConsignee(this)" id="theForm" name="theForm" method="post" action="flow.php">
+         
+<form onsubmit="return checkConsignee(this)" id="theForm" name="theForm" method="post" action="order.php">
         <div class="flowBox">
 <h6><span>收货人信息</span></h6>
 <table width="100%" cellspacing="1" cellpadding="5" border="0" bgcolor="#dddddd" align="center">
@@ -33,12 +33,12 @@
   <tbody><tr>
     <td bgcolor="#ffffff">配送区域:</td>
     <td bgcolor="#ffffff" colspan="3">
-    <input type="text" name="address" />
+    <input type="text" name="zone" />
     (必填) </td>
   </tr>
     <tr>
     <td bgcolor="#ffffff">收货人姓名:</td>
-    <td bgcolor="#ffffff"><input type="text" value="" id="consignee_0" class="inputBg" name="consignee">
+    <td bgcolor="#ffffff"><input type="text" value="" id="consignee_0" class="inputBg" name="receiver">
     (必填) </td>
     <td bgcolor="#ffffff">电子邮件地址:</td>
     <td bgcolor="#ffffff"><input type="text" value="" id="email_0" class="inputBg" name="email">
@@ -50,7 +50,7 @@
     <td bgcolor="#ffffff"><input type="text" value="" id="address_0" class="inputBg" name="address">
     (必填)</td>
     <td bgcolor="#ffffff">邮政编码:</td>
-    <td bgcolor="#ffffff"><input type="text" value="" id="zipcode_0" class="inputBg" name="zipcode"></td>
+    <td bgcolor="#ffffff"><input type="text" value="" id="zipcode_0" class="inputBg" name="postcode"></td>
   </tr>
     <tr>
     <td bgcolor="#ffffff">电话:</td>
@@ -62,7 +62,7 @@
     
   <tr>
     <td bgcolor="#ffffff">标志建筑:</td>
-    <td bgcolor="#ffffff"><input type="text" value="" id="sign_building_0" class="inputBg" name="sign_building"></td>
+    <td bgcolor="#ffffff"><input type="text" value="" id="sign_building_0" class="inputBg" name="building"></td>
     <td bgcolor="#ffffff">最佳送货时间:</td>
     <td bgcolor="#ffffff"><input type="text" value="" id="best_time_0" class="inputBg" name="best_time"></td>
   </tr>
@@ -97,7 +97,7 @@
              <?php } ?>
                                  <tr>
               <td bgcolor="#ffffff" colspan="7">
-                            购物金额小计 ￥<?php echo $total;?>元，比市场价 ￥<?php echo $market_total;?>元 节省了 ￥<?php echo $discount;?>元 (<?php echo $rate;?>%)              </td>
+                            购物金额小计 ￥<?php echo $t_shopprice;?>元，比市场价 ￥<?php echo $t_mktprice;?>元 节省了 ￥<?php echo $discount;?>元 (<?php echo $discount_prc;?>%)              </td>
             </tr>
                       </tbody></table>
       </div>
@@ -114,7 +114,7 @@
             </tr>
                         
             <tr>
-              <td valign="top" bgcolor="#ffffff"><input type="radio" disabled="true" onclick="selectPayment(this)" iscod="1" value="3" name="payment"></td>
+              <td valign="top" bgcolor="#ffffff"><input type="radio" disabled="true" onclick="selectPayment(this)" iscod="1" value="3" name="pay_method"></td>
               <td valign="top" bgcolor="#ffffff"><strong>货到付款</strong></td>
               <td valign="top" bgcolor="#ffffff">开通城市：北京。 
 货到付款区域：北京市内各高校</td>
@@ -122,7 +122,7 @@
             </tr>
                         
             <tr>
-              <td valign="top" bgcolor="#ffffff"><input type="radio" onclick="selectPayment(this)" iscod="0" value="4" name="payment"></td>
+              <td valign="top" bgcolor="#ffffff"><input type="radio" onclick="selectPayment(this)" iscod="0" value="4" name="pay_method"></td>
               <td valign="top" bgcolor="#ffffff"><strong>网上支付</strong></td>
               <td valign="top" bgcolor="#ffffff">通过支付宝进行支付，无支付宝帐号的客户也可以用银行卡进行在线支付（前提是银行卡已经开通网上支付功能）。</td>
               <td valign="top" bgcolor="#ffffff" align="right">￥0.00元</td>
@@ -147,16 +147,16 @@
   </tr>
     <tr>
     <td bgcolor="#ffffff" align="right">
-      商品总价: <font class="f_orange_bold">￥<?php echo $total; ?>元</font>
+      商品总价: <font class="f_orange_bold">￥<?php echo $t_shopprice; ?>元</font>
                                               </td>
   </tr>
     <tr>
-    <td bgcolor="#ffffff" align="right"> 应付款金额: <font class="f_orange_bold">￥<?php echo $total; ?>元</font>
+    <td bgcolor="#ffffff" align="right"> 应付款金额: <font class="f_orange_bold">￥<?php echo $t_shopprice; ?>元</font>
   </td>
   </tr>
 </tbody></table>
 </div>           <div align="center" style="margin:8px auto;">
-            <input type="image" src="./view/front/images/bnt_subOrder.gif">
+            <input type="image" src="../view/front/images/bnt_subOrder.gif">
             <input type="hidden" value="done" name="step">
             </div>
     </div>

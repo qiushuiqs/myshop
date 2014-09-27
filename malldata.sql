@@ -46,3 +46,36 @@ password char(32) not null default '',
 regtime int unsigned not null default 0,
 lastlogin int unsigned not null default 0
 )ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+
+#订单表 
+create table orderinfo(
+	order_id int unsigned not null auto_increment primary key,
+	order_sn char(15) not null default '',
+	user_id int unsigned not null default 0,
+	username varchar(20) not null default '',
+	zone varchar(30) not null default '',
+	address varchar(60) not null default '',
+	postcode char(6) not null default '',
+	receiver varchar(10) not null default '',
+	email varchar(100) not null default '',
+	tel varchar(20) not null default '',
+	mobile char(11) not null default '',
+	building varchar(30) not null default '',
+	best_time varchar(10) not null default '',
+	add_time int unsigned not null default 0,
+	order_amount decimal(10,2) not null default 0,
+	pay_method tinyint(1) not null default 0
+) engine myisam charset utf8;
+
+#订单与商品的关联表
+create table transactinfo(
+	trans_id int unsigned not null auto_increment primary key,
+	order_id int unsigned not null default 0,
+	order_sn char(15) not null default '',
+	goods_id int unsigned not null default 0,
+	goods_name varchar(30) NOT NULL DEFAULT '',
+	goods_number smallint(6) NOT NULL DEFAULT '1',
+	shop_price decimal(9,2) NOT NULL DEFAULT '0.00',
+	subtotal decimal(9,2) NOT NULL DEFAULT '0.00'
+)engine myisam charset utf8;
