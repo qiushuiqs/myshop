@@ -106,7 +106,7 @@
 </div>
 <div style="position:relative" class="cart_tip f_r">
 <img src="../view/front/images/car.gif">
-<a title="查看购物车" href="flow.php">购物车中有 <b>0</b> 件商品 合计 <b>￥0.00元</b></a>
-<a style="position:absolute; top:30px; right:0px;" href="flow.php"><img src="../view/front/images/jiesuan.gif"></a>
+<a title="查看购物车" href="flow.php">购物车中有 <b><?php echo _displayCart()[0]?></b> 件商品 合计 <b>￥<?php echo _displayCart()[1]?>元</b></a>
+<a style="position:absolute; top:30px; right:0px;" href="cart.php?act='buy'"><img src="../view/front/images/jiesuan.gif"></a>
 </div>
 </div>

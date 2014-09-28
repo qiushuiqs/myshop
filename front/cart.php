@@ -76,7 +76,7 @@ foreach($items as $item){
 }
 $discount =$t_mktprice-$t_shopprice; 
 $discount_prc = floor((int)$discount/$t_mktprice*100);
-$_SESSION['t_shopprice'] = $t_shopprice;
+//$_SESSION['t_shopprice'] = $t_shopprice;
 if($act == 'checkout'){	
 	include(__ROOT__.'view/front/tijiao.html');
 	exit;

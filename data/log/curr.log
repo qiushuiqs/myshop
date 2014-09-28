@@ -2535,3 +2535,338 @@ select market_price, thumb_img from goods where goods_id=15
 set names utf8
 SHOW COLUMNS FROM orderinfo
 insert into orderinfo (zone,receiver,email,address,postcode,tel,mobile,building,best_time,pay_method,add_time,user_id,username,order_amount)values ('shanghai','xionghao','wangjian@13.com','wewewe','2213','','123123212321','','','4','1411832631','0','anonymous','150')
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, add_time from goods where is_new = 1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 5
+set names utf8
+select * from goods where goods_id=15
+select * from category
+select * from category where cat_id = 8
+set names utf8
+select * from goods where goods_id=15
+select market_price, thumb_img from goods where goods_id=15
+set names utf8
+select market_price, thumb_img from goods where goods_id=15
+set names utf8
+SHOW COLUMNS FROM orderinfo
+select * from orderinfo where order_sn = 0
+insert into orderinfo (zone,receiver,email,address,postcode,tel,mobile,building,best_time,pay_method,add_time,user_id,username,order_amount,order_sn)values ('wewe','weeew','mark.xiong@instem.com','wewewe','200000','wewe','','','','4','1411889351','0','anonymous','150','OD141188935180596')
+set names utf8
+select market_price, thumb_img from goods where goods_id=15
+set names utf8
+SHOW COLUMNS FROM orderinfo
+select * from orderinfo where order_sn = 0
+set names utf8
+select market_price, thumb_img from goods where goods_id=15
+set names utf8
+SHOW COLUMNS FROM orderinfo
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+select * from orderinfo where order_sn = 0
+set names utf8
+select market_price, thumb_img from goods where goods_id=15
+set names utf8
+SHOW COLUMNS FROM orderinfo
+select * from orderinfo where order_sn = 'OD141189048396823'
+insert into orderinfo (zone,receiver,email,address,postcode,tel,mobile,building,best_time,pay_method,add_time,user_id,username,order_amount,order_sn)values ('wewe','weeew','mark.xiong@instem.com','wewewe','200000','wewe','','','','4','1411890483','0','anonymous','150','OD141189048396823')
+set names utf8
+select market_price, thumb_img from goods where goods_id=15
+set names utf8
+select market_price, thumb_img from goods where goods_id=15
+set names utf8
+SHOW COLUMNS FROM orderinfo
+select * from orderinfo where order_sn = 'OD141189406743123'
+insert into orderinfo (zone,receiver,email,address,postcode,tel,mobile,building,best_time,pay_method,add_time,user_id,username,order_amount,order_sn)values ('wewe','weeew','mark.xiong@instem.com','wewewe','200000','wewe','','','','4','1411894067','0','anonymous','150','OD141189406743123')
+insert into transactinfo (goods_id,goods_name,goods_number,shop_price,subtotal,order_sn,order_id)values ('15','滑轮添奴男士系带正装鞋/牛皮','1','150.00','150','OD141189406743123','3')
+update table goods set goods_number = goods_number-1 where goods_id=15
+error
+set names utf8
+select market_price, thumb_img from goods where goods_id=15
+set names utf8
+SHOW COLUMNS FROM orderinfo
+select * from orderinfo where order_sn = 'OD141189434076470'
+insert into orderinfo (zone,receiver,email,address,postcode,tel,mobile,building,best_time,pay_method,add_time,user_id,username,order_amount,order_sn)values ('wewe','weeew','mark.xiong@instem.com','wewewe','200000','wewe','','','','4','1411894340','0','anonymous','150','OD141189434076470')
+insert into transactinfo (goods_id,goods_name,goods_number,shop_price,subtotal,order_sn,order_id)values ('15','滑轮添奴男士系带正装鞋/牛皮','1','150.00','150','OD141189434076470','4')
+update goods set goods_number = goods_number-1 where goods_id=15
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, add_time from goods where is_new = 1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 5
+set names utf8
+select market_price, thumb_img from goods where goods_id=15
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+set names utf8
+select * from goods where goods_id=1
+select * from category
+select * from category where cat_id = 2
+set names utf8
+select * from goods where goods_id=1
+select market_price, thumb_img from goods where goods_id=15
+select market_price, thumb_img from goods where goods_id=1
+set names utf8
+select * from goods where goods_id=1
+select * from category
+select * from category where cat_id = 2
+set names utf8
+select * from goods where goods_id=1
+select market_price, thumb_img from goods where goods_id=15
+select market_price, thumb_img from goods where goods_id=1
+set names utf8
+select * from goods where goods_id=1
+select * from category
+select * from category where cat_id = 2
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+set names utf8
+select * from goods where goods_id=8
+select * from category
+select * from category where cat_id = 5
+set names utf8
+select * from goods where goods_id=8
+select market_price, thumb_img from goods where goods_id=15
+select market_price, thumb_img from goods where goods_id=1
+select market_price, thumb_img from goods where goods_id=8
+set names utf8
+select * from goods where goods_id=8
+select * from category
+select * from category where cat_id = 5
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+set names utf8
+select * from goods where goods_id=2
+select * from category
+select * from category where cat_id = 2
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+set names utf8
+select * from goods where goods_id=1
+select * from category
+select * from category where cat_id = 2
+set names utf8
+select * from goods where goods_id=1
+select market_price, thumb_img from goods where goods_id=15
+select market_price, thumb_img from goods where goods_id=1
+select market_price, thumb_img from goods where goods_id=8
+set names utf8
+select * from goods where goods_id=1
+select * from category
+select * from category where cat_id = 2
+set names utf8
+select * from goods where goods_id=1
+select market_price, thumb_img from goods where goods_id=15
+select market_price, thumb_img from goods where goods_id=1
+select market_price, thumb_img from goods where goods_id=8
+set names utf8
+select * from goods where goods_id=1
+select * from category
+select * from category where cat_id = 2
+set names utf8
+select * from goods where goods_id=1
+select market_price, thumb_img from goods where goods_id=15
+select market_price, thumb_img from goods where goods_id=1
+select market_price, thumb_img from goods where goods_id=8
+set names utf8
+select market_price, thumb_img from goods where goods_id=15
+select market_price, thumb_img from goods where goods_id=1
+select market_price, thumb_img from goods where goods_id=8
+set names utf8
+SHOW COLUMNS FROM orderinfo
+select * from orderinfo where order_sn = 'OD141189465159104'
+insert into orderinfo (zone,receiver,email,address,postcode,tel,mobile,building,best_time,pay_method,add_time,user_id,username,order_amount,order_sn)values ('北京','张晓萌','zxm@163.com','不知道地址','21000','1344232222','232322233','TIANMEN','','4','1411894651','0','anonymous','4627','OD141189465159104')
+insert into transactinfo (goods_id,goods_name,goods_number,shop_price,subtotal,order_sn,order_id)values ('15','滑轮添奴男士系带正装鞋/牛皮','1','150.00','150','OD141189465159104','1')
+insert into transactinfo (goods_id,goods_name,goods_number,shop_price,subtotal,order_sn,order_id)values ('1','两扣双开衩平驳头斜兜男士西服套装3312/纯藏青色人字纹/羊毛+涤纶','5','799.00','3995','OD141189465159104','1')
+insert into transactinfo (goods_id,goods_name,goods_number,shop_price,subtotal,order_sn,order_id)values ('8','泡泡袖后领色丁拼接平驳领一扣女士正装套裤/黑色','1','482.00','482','OD141189465159104','1')
+update goods set goods_number = goods_number-1 where goods_id=15
+update goods set goods_number = goods_number-5 where goods_id=1
+update goods set goods_number = goods_number-1 where goods_id=8
+set names utf8
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, add_time from goods where is_new = 1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 5
+set names utf8
+select * from goods where goods_id=15
+select * from category
+select * from category where cat_id = 8
+set names utf8
+select * from goods where goods_id=15
+select market_price, thumb_img from goods where goods_id=15
+set names utf8
+select market_price, thumb_img from goods where goods_id=15
+set names utf8
+SHOW COLUMNS FROM orderinfo
+select * from orderinfo where order_sn = 'OD141189566219204'
+insert into orderinfo (zone,receiver,email,address,postcode,tel,mobile,building,best_time,pay_method,add_time,user_id,username,order_amount,order_sn)values ('wewe','weeew','mark.xiong@instem.com','Room 205, Unit 16, No.88 Darwin Road','200000','','','','','4','1411895662','0','anonymous','150','OD141189566219204')
+insert into transactinfo (goods_id,goods_name,goods_number,shop_price,subtotal,order_sn,order_id)values ('15','滑轮添奴男士系带正装鞋/牛皮','1','150.00','150','OD141189566219204','2')
+update goods set goods_number = goods_number-1 where goods_id=15
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from goods where goods_id=6
+select market_price, thumb_img from goods where goods_id=6
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+set names utf8
+select * from goods where goods_id=5
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from goods where goods_id=5
+select market_price, thumb_img from goods where goods_id=6
+select market_price, thumb_img from goods where goods_id=5
+set names utf8
+select * from goods where goods_id=5
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from goods where goods_id=5
+select market_price, thumb_img from goods where goods_id=6
+select market_price, thumb_img from goods where goods_id=5
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+set names utf8
+select market_price, thumb_img from goods where goods_id=6
+select market_price, thumb_img from goods where goods_id=5

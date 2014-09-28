@@ -17,4 +17,9 @@ class OrderinfoModel extends Model{
 								array('address',1,'must have address','require')
 							);
 	
+	public function snGenerator(){
+		$sn = 'OD'.time().mt_rand(10000,99999);
+		$sql = "select * from ".$this->table." where order_sn = '".$sn."'";
+		return $this->db->getOne($sql)? $this->snGenerator():$sn;
+	}
 }

@@ -45,8 +45,8 @@ class GoodsModel extends Model{
 */
 	//商品编号(goods_sn)自动增加的迭代器
 	public function snGenerator(){
-		$sn = time().mt_rand(10000,99999);
-		$sql = "select * from ".$this->table." where goods_sn = ".(int)$sn;
+		$sn = 'GD'.time().mt_rand(10000,99999);
+		$sql = "select * from ".$this->table." where goods_sn = '".$sn."'";
 		return $this->db->getOne($sql)? snGenerator():$sn;
 	}
 	
@@ -99,5 +99,13 @@ class GoodsModel extends Model{
 		}
 		
 		return $cart;
+	}
+	/*
+		下订单后减少库存量
+		
+	*/
+	public function updateStock($key, $num){
+		$sql = 'update '.$this->table.' set goods_number = goods_number-'.$num.' where goods_id='.$key;
+		return $this->db->query($sql);
 	}
 }

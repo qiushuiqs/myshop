@@ -162,7 +162,7 @@ class Model{
 		if($this->db->query($sql)){
 			return $this->db->affected_rows();
 		}else{
-			return fales;
+			return false;
 		}
 	}
 	
@@ -208,5 +208,11 @@ class Model{
 		}
 		
 		return $data;
+	}
+	/*
+		return the rowid of new inserted row
+	*/
+	public function insertedRowNo(){
+		return $this->db->insert_id();
 	}
 }

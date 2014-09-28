@@ -16,3 +16,13 @@ function _addslashes($arr){
 	}
 	return $arr;
 }
+
+function _displayCart(){
+	$comm_cart=array(0,0);
+	if(isset($_SESSION['cart'])){
+		$cartObj = CartHelper::getCart();
+		$comm_cart[0] = $cartObj->getItemCount();
+		$comm_cart[1] = $cartObj->getPrice();
+	}
+	return $comm_cart;
+}
