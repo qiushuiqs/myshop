@@ -67,7 +67,7 @@ class GoodsModel extends Model{
 			 int number of goods
 		return array all the goods in terms of category IDs
 	*/
-	public function goodsByCate($cateID,$n = null){
+	public function goodsByCate($cateID,$n = null,$start =null){
 		$cateObj = new CategoryModel();
 		$allCates = $cateObj->select();
 		$cateList = $cateObj->getCatTree($allCates,$cateID);
@@ -79,8 +79,8 @@ class GoodsModel extends Model{
 		$instring = implode(',', $cateIDList);
 		$sql = 'select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from '.$this->table.
 		' where cat_id in ('.$instring.') order by add_time desc';
-		if(is_numeric($n)){
-			$sql .= ' limit '.$n;
+		if(is_numeric($n) && is_numeric($start)){
+			$sql .= ' limit '.$start.','.$n;
 		}
 		$data = $this->db->getAll($sql);
 		return $data;

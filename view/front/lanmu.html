@@ -221,13 +221,7 @@ var select_spe = "请选择商品属性";
 <form method="get" action="http:///category.php" name="selectPageForm">
  <div class="pagebar" id="pager">
   <span style="margin-right:10px;" class="f_l f6">总计 <b>54</b>  个记录</span>
-                      <span class="page_now">1</span>
-                      <a href="#">[2]</a>
-                      <a href="#">[3]</a>
-                      <a href="#">[4]</a>
-                      <a href="#">[5]</a>
-            
-  <a href="http:///category.php?id=17&amp;price_min=0&amp;price_max=0&amp;page=2&amp;sort=last_update&amp;order=DESC" class="next">下一页</a>    </div>
+                      <?php echo $pageMenu;?>    </div>
 </form>
 <script language="JavaScript" type="Text/Javascript">
 &lt;!--

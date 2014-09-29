@@ -2,8 +2,7 @@
 /*
 	分页类
 */
-define('ACC',true);
-require('../system/init.php');
+defined('ACC')||exit('ACC Denied');
 
 class PaginationHelper{
 	protected $cntPage = 0;
@@ -65,11 +64,12 @@ class PaginationHelper{
 		}
 		
 		
-		echo(implode('',$pagebar));
+		return (implode('',$pagebar));
 	}
 	
 }
-
+/*
 $cpage = isset($_GET['page'])?$_GET['page']:1;
 $page = new PaginationHelper(12,2,$cpage);
 $page->showPageMenu();
+*/
