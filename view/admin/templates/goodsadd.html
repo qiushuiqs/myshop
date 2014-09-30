@@ -19,6 +19,11 @@ function charea(a) {
     
 }
 </script>
+<!-- 编辑器配置文件 -->
+<script type="text/javascript" src="../lib/ueditor/ueditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="../lib/ueditor/ueditor.all.min.js"></script>
+	
 </head>
 <body>
 
@@ -88,7 +93,7 @@ function charea(a) {
         <!-- 详细描述 -->
         <table width="90%" id="detail-table" style="display:none">
           <tr>
-            <td><textarea name="goods_desc"></textarea></td>
+            <td><textarea name="goods_desc" id="goods_desc"></textarea></td>
           </tr>
         </table>
 
@@ -138,6 +143,9 @@ function charea(a) {
     </div>
 </div>
 <!-- end goods form -->
-
+<!-- 实例化编辑器 -->
+<script type="text/javascript">
+    var ue = UE.getEditor('goods_desc');
+</script>
 </body>
 </html>

@@ -3172,3 +3172,119 @@ select * from category
 select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
 select * from category
 select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 2,2
+set names utf8
+select * from goods where is_delete = 0
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+error
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+SHOW COLUMNS FROM goods
+select * from goods where goods_sn = 'GD141205628747783'
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,goods_brief,goods_id,add_time,ori_img,goods_img,thumb_img)values ('女士吊带领带','GD141205628747783','11','80','100','<p>不可不看的领带，男女都可以使用</p><p>&nbsp;&nbsp; &nbsp;&nbsp;<img src=\"/ueditor/php/upload/image/20140930/1412056151119959.jpg\" title=\"1412056151119959.jpg\" alt=\"u=3314328220,2687043264&amp;fm=23&amp;gp=0.jpg\"/>&nbsp; &nbsp; &nbsp; &nbsp;<img src=\"/ueditor/php/upload/image/20140930/1412056198266883.jpg\" alt=\"535827119231746857.jpg\" width=\"305\" height=\"292\" style=\"width: 305px; height: 292px;\"/></p>','0.1','20','1','1','1','1','领带用于打高尔夫时使用','0','1412056287','data/uploads/201409/30/hhfk2a.jpg','data/uploads/201409/30/goods_hhfk2a.jpg','data/uploads/201409/30/thumb_hhfk2a.jpg')
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, add_time from goods where is_new = 1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+set names utf8
+select * from category where cat_id = 10
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (10,11,12) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (10,11,12) order by add_time desc limit 0,2
+set names utf8
+select * from goods where goods_id=26
+select * from category
+select * from category where cat_id = 11
+set names utf8
+select * from goods where goods_id=26
+select * from category
+select * from category where cat_id = 11
+set names utf8
+select * from goods where goods_id=26
+select * from category
+select * from category where cat_id = 11
+set names utf8
+select * from goods where goods_id=26
+select * from category
+select * from category where cat_id = 11
+set names utf8
+select * from goods where goods_id=26
+select * from category
+select * from category where cat_id = 11
+set names utf8
+select * from goods where is_delete = 0
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 0
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from goods where is_delete = 0
+set names utf8
+select * from goods where is_delete = 1
+set names utf8
+select * from goods where is_delete = 1
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from goods where is_delete = 0
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from category where cat_id = 0
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category

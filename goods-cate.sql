@@ -70,7 +70,7 @@ DROP TABLE IF EXISTS `category`;
 CREATE TABLE `category` (
   `cat_id` int(11) NOT NULL AUTO_INCREMENT,
   `cat_name` varchar(20) NOT NULL DEFAULT '',
-  `intro` varchar(100) NOT NULL DEFAULT '',
+  `dscrpt` varchar(100) NOT NULL DEFAULT '',
   `parent_id` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`cat_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
