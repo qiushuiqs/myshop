@@ -47,41 +47,28 @@
       <input onclick='listTable.selectAll(this, "checkboxes")' type="checkbox" />
       <a href="#">编号</a><img src="../view/admin/images/sort_desc.gif"/>    </th>
 
-    <th><a href="#">商品名称</a></th>
-    <th><a href="#">货号</a></th>
-    <th><a href="#">销售价</a></th>
-	<th><a href="#">成本价</a></th>
-    <th><a href="#">上架</a></th>
-    <th><a href="#">精品</a></th>
-    <th><a href="#">新品</a></th>
-
-    <th><a href="#">热销</a></th>
-    <th><a href="#">推荐排序</a></th>
-        <th><a href="#">库存</a></th>
-        <th>操作</th>
+    <th><a href="#">用户名称</a></th>
+    <th><a href="#">邮箱</a></th>
+	<th><a href="#">注册时间</a></th>
+    <th><a href="#">上次登陆时间</a></th>
+    <th>操作</th>
   <tr>
-    <?php foreach($goodslist as $v){?>    
+    <?php foreach($userlist as $v){?>    
 	<tr>
-    <td><input type="checkbox" name="checkboxes[]" value="32" />4</td>
+    <td><input type="checkbox" name="checkboxes[]" value="32" /><?php echo $v['user_id'];?></td>
 
-    <td class="first-cell" style=""><span ><?php echo $v['goods_name'];?></span></td>
-    <td><span ><?php echo $v['goods_sn'];?></span></td>
-    <td align="right"><span ><?php echo $v['shop_price'];?>
+    <td class="first-cell" style=""><span ><?php echo $v['username'];?></span></td>
+    <td align="right"><span ><?php echo $v['email'];?>
     </span></td>
-	<td align="right"><span ><?php echo $v['market_price'];?>
+	<td align="right"><span ><?php echo $v['regtime'];?>
     </span></td>
-    <td align="center"><img src="../view/admin/images/yes.gif"  /></td>
-    <td align="center"><img src="../view/admin/images/no.gif"  /></td>
-    <td align="center"><img src="../view/admin/images/no.gif"  /></td>
-    <td align="center"><img src="../view/admin/images/no.gif"  /></td>
 
-    <td align="center"><span >100</span></td>
-        <td align="right"><span >17</span></td>
+    <td align="center"><span ><?php echo $v['lastlogin'];?></span></td>
         <td align="center">
-      <a href="goodsview.php?goods_id=<?php echo $v['goods_id'];?>" target="_blank" title="查看"><img src="../view/admin/images/icon_view.gif" width="16" height="16" border="0" /></a>
+      <a href="goodsview.php?goods_id=<?php echo $v['user_id'];?>" target="_blank" title="查看"><img src="../view/admin/images/icon_view.gif" width="16" height="16" border="0" /></a>
       <a href="#" title="编辑"><img src="../view/admin/images/icon_edit.gif" width="16" height="16" border="0" /></a>
       <a href="#" title="复制"><img src="../view/admin/images/icon_copy.gif" width="16" height="16" border="0" /></a>
-      <a href="goodstrash.php?goods_id=<?php echo $v['goods_id'];?>"  title="回收站"><img src="../view/admin/images/icon_trash.gif" width="16" height="16" border="0" /></a>
+      <a href="goodstrash.php?goods_id=<?php echo $v['user_id'];?>"  title="回收站"><img src="../view/admin/images/icon_trash.gif" width="16" height="16" border="0" /></a>
       <a href="#" title="货品列表"><img src="../view/admin/images/icon_docs.gif" width="16" height="16" border="0" /></a>          </td>
   </tr>
 	<?php } ?>
