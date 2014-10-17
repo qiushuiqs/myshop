@@ -53,6 +53,7 @@ class mysql extends db{
 	//	if($this->conf->debug){
 	//		log::write($sql);
 	//	}
+		
 		$rs = $this->conn->query($sql);
 		log::write($sql);
 		if(!$rs){
