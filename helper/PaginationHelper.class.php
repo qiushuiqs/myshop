@@ -40,7 +40,6 @@ class PaginationHelper{
 			$url = $prefix.$postfix.'&page=';
 		}
 		
-		
 		//实现分页导航界面，以及下一页上一页，结尾和开头
 		$pagebar = array();
 		$pagebar[] = '<span class="page_now">'.$this->curPage.'</span>';

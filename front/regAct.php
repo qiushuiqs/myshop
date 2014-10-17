@@ -24,14 +24,13 @@ if(!$user->_validate($data)){
 }else{
 	$user ->setField($user ->showField());
 	$data = $user->_facade($data);
-}
-
-if(!$user->checkUser($data['username'])){
-	list($error) = $user->getErr();
-	$msg = $error;
-}else{
-	$user->reg($data);
-	$msg .= "Register Sucessfully!";
+	if(!$user->checkUser($data['username'])){
+		list($error) = $user->getErr();
+		$msg = $error;
+	}else{
+		$user->reg($data);
+		$msg .= "Register Sucessfully!";
+	}
 }
 include('../view/front/msg.html');
 

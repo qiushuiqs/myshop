@@ -215,4 +215,13 @@ class Model{
 	public function insertedRowNo(){
 		return $this->db->insert_id();
 	}
+	/*
+		返回从第i行开始N个数据
+		@parm int i, int n
+		@return Array 多行数据
+	*/
+	public function selectLimited($i, $n){
+		$sql = "SELECT * FROM ". $this->table." limit ".$i.",".$n;
+		return $this->db->getAll($sql);
+	}
 }

@@ -11,8 +11,12 @@ if(!defined('ACC')){
 //
 $user = new UserModel();
 $userlist = $user->select();
+
+$perPage = 7;
+$curPage = isset($_GET['page'])?$_GET['page']:1;
+$pageObj =new PaginationHelper(count($userlist), $perPage, $curPage);
+
+$pageMenu = $pageObj->showPageMenu();
+$userlist = $user->selectLimited(($curPage-1)*$perPage, $perPage);
 $userlist = $user->dataByRealDate($userlist);
-//print_r($userlist);
-//[user_id] => 1 [username] => sdsd [email] => sdsd [password] => sdsd [regtime] => 0 [lastlogin] => 0 
-//print_r($catetree);
 include(__ROOT__.'view/admin/templates/userlist.html');
