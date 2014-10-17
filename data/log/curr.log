@@ -3606,3 +3606,57 @@ set names utf8
 select * from user
 set names utf8
 select * from user
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, add_time from goods where is_new = 1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+set names utf8
+select * from orderinfo
+set names utf8
+select * from orderinfo
+set names utf8
+select * from user
+set names utf8
+select * from user
+set names utf8
+select * from user
+set names utf8
+select * from user
+set names utf8
+select * from user
+set names utf8
+select * from user
+set names utf8
+select * from user
+set names utf8
+select * from goods where goods_id=1
+set names utf8
+select * from user
+set names utf8
+select * from orderinfo
+set names utf8
+select * from orderinfo
+set names utf8
+select * from orderinfo
+set names utf8
+select * from orderinfo
+set names utf8
+select * from orderinfo
+set names utf8
+select * from user
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from orderinfo
+set names utf8
+select * from orderinfo
+set names utf8
+select * from user
+set names utf8
+select * from orderinfo
+set names utf8
+select * from user

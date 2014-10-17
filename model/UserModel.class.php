@@ -62,4 +62,25 @@ class UserModel extends Model{
 		}
 	}
 	
+	/*
+		根据时间戳返回用户准确的登陆日期
+		@param:  data user表单
+		@return: data user表单包含年月日字段
+	*/
+	public function dataByRealDate($data){
+	
+		for($i=0, $end=count($data); $i<$end; $i++){
+			if(isset($data[$i]['regtime'])){
+				$regtime = getdate($data[$i]['regtime']);
+				$data[$i]['year'] = $regtime['year'];
+				$data[$i]['month'] = $regtime['month'];
+				$data[$i]['mday'] = $regtime['mday'];
+			}else{
+				$data[$i]['year'] = 0;
+				$data[$i]['month'] = 0;
+				$data[$i]['mday'] = 0;
+			}
+		}		
+		return $data;
+	}
 }

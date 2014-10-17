@@ -22,29 +22,30 @@
   <tr>
     <th>订单号</th>
     <th>订单金额</th>
-    <th>数量单位</th>
-    <th>导航栏</th>
-    <th>是否显示</th>
+    <th>订单用户</th>
+    <th>邮箱</th>
+    <th>电话</th>
 
-    <th>价格分级</th>
-    <th>排序</th>
+    <th>订单时间</th>
+    <th>已付款</th>
     <th>操作</th>
   </tr>
   <?php foreach($orderlist as $v){?>
-      <tr align="center" class="0" id="0_1" id = 'tr_1'>
+  <tr align="center" class="0" id="0_1" id = 'tr_1'>
     <!--<td align="left" class="first-cell" style = 'padding-left="0"'>
             <img src="../view/admin/images/menu_minus.gif" id="icon_0_1" width="9" height="9" border="0" style="margin-left:<?php echo $v['lv'];?>em" />
 
             <span><a href="#" ><?php echo $v['cat_name'];?></a></span>
         </td>-->
-		<td align="left" class="first-cell" style = 'padding-left="0"'><?php echo $v['order_sn'];?></td>
+	<td align="left" class="first-cell" style = 'padding-left="0"'><?php echo $v['order_sn'];?></td>
     <td align="right" width="10%"><?php echo $v['order_amount'];?></td>
-    <td width="10%"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-    <td width="10%"><img src="../view/admin/images/no.gif" /></td>
-    <td width="10%"><img src="../view/admin/images/yes.gif" /></td>
-    <td><span>5</span></td>
-
-    <td width="10%" align="right"><span>50</span></td>
+    <td width="10%"><span><?php echo $v['username'];?></span></td>
+    <td><span><?php echo $v['email'];?></span></td>
+    <td width="10%" align="right"><span><?php echo $v['mobile'];?></span></td>
+	<td width="10%"><span><?php echo $v['add_time'];?></span></td>
+	<td width="10%"><img src="../view/admin/images/no.gif" /></td>
+    
+    
     <td width="24%" align="center">
       <a href="#">转移商品</a> |
       <a href="cateedit.php?cat_id=<?php echo $v['order_id'];?>cat">编辑</a> |
