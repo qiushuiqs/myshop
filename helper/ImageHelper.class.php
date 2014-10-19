@@ -201,6 +201,7 @@ class ImageHelper{
 		//销毁资源
 		imagedestroy($cap1);
 		imagedestroy($cap2);
+		return $str;
 	}	
 }
 /*

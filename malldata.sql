@@ -62,7 +62,7 @@ create table orderinfo(
 	tel varchar(20) not null default '',
 	mobile char(11) not null default '',
 	building varchar(30) not null default '',
-	best_time varchar(10) not null default '',
+	best_time varchar(10) not null default '',l
 	add_time int unsigned not null default 0,
 	order_amount decimal(10,2) not null default 0,
 	pay_method tinyint(1) not null default 0
@@ -78,4 +78,17 @@ create table transactinfo(
 	goods_number smallint(6) NOT NULL DEFAULT '1',
 	shop_price decimal(9,2) NOT NULL DEFAULT '0.00',
 	subtotal decimal(9,2) NOT NULL DEFAULT '0.00'
+)engine myisam charset utf8;
+
+#商品评论表
+create table goodscomments(
+	comments_id int unsigned not null auto_increment primary key,
+	goods_id int unsigned not null default 0,
+	goods_name varchar(30) NOT NULL DEFAULT '',
+	user_id int unsigned not null default 0,
+	username varchar(20) not null default '',
+	email varchar(100) not null default '',
+	clevel tinyint(1) not null default 0,
+	ccontent varchar(500) not null default '',
+	add_time int unsigned not null default 0
 )engine myisam charset utf8;

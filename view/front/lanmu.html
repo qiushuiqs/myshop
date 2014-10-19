@@ -114,7 +114,12 @@
   <div style="CrystalGenResPlugins: block;" id="history_div" class="shop_left_lib">
             	<div class="lib_top">浏览历史</div>
                 <div id="history_list" class="lib_mid">
-                    <ul class="clearfix"><li class="goodsimg"><a target="_blank" href="#"><img class="B_blue" alt="纯羊毛一粒扣枪驳领纯黑西服套装" src="../view/front/images/313_thumb_G_1346420329070.jpg"></a></li><li><a title="纯羊毛一粒扣枪驳领纯黑西服套装" target="_blank" href="#">纯羊毛一粒扣枪驳领纯黑...</a><br>本店售价：<font class="f1">￥1099元</font><br></li></ul><ul class="clearfix"><li class="goodsimg"><a target="_blank" href="#"><img class="B_blue" alt="两扣双开衩平驳头斜兜男士西服套装3312/纯藏青色人字纹/羊毛+涤纶" src="../view/front/images/315_thumb_G_1346659439530.jpg"></a></li><li><a title="两扣双开衩平驳头斜兜男士西服套装3312/纯藏青色人字纹/羊毛+涤纶" target="_blank" href="#">两扣双开衩平驳头斜兜男...</a><br>本店售价：<font class="f1">￥799元</font><br></li></ul><ul id="clear_history"><a onclick="clear_history()">[清空]</a></ul>             
+                    <?php foreach($goods_history as $v){?>
+					<ul class="clearfix">
+					<li class="goodsimg"><a target="_blank" href="#"><img class="B_blue" alt="<?php echo $v["goods_name"];?>" src="<?php echo "../".$v["thumb_img"];?>"></a></li>
+					<li><a title="<?php echo $v["goods_name"];?>" target="_blank" href="#"><?php echo mb_substr($v['goods_name'],0,12,'UTF-8'); ?>...</a><br>售价：<font class="f1">￥<?php echo $v["shop_price"];?>元</font><br></li>
+					</ul>
+					<?php }?>					
                 </div>
                  <div class="lib_down"></div>
             </div>
@@ -141,7 +146,7 @@
             <div class="shop_right_lib_comm">
             	<div class="innerbox goods_list clearfix">
                   
- <div style="height:20px; padding:0; padding:3px;" class="switch_dispstyle clearfix">
+ <div style="padding:0; padding:3px;" class="switch_dispstyle clearfix">
   <form name="listform" class="sort" method="GET">
   <div class="f_l">
   显示方式：

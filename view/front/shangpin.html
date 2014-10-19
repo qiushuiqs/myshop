@@ -258,7 +258,12 @@
 			   <div class="shop_left_lib" id="history_div" style="CrystalGenResPlugins: block;">
             	<div class="lib_top">浏览历史</div>
                 <div class="lib_mid" id="history_list">
-                    <ul class="clearfix"><li class="goodsimg"><a href="#" target="_blank"><img src="../view/front/images/313_thumb_G_1346420329070.jpg" alt="纯羊毛一粒扣枪驳领纯黑西服套装" class="B_blue"></a></li><li><a href="#" target="_blank" title="纯羊毛一粒扣枪驳领纯黑西服套装">纯羊毛一粒扣枪驳领纯黑...</a><br>本店售价：<font class="f1">￥1099元</font><br></li></ul><ul class="clearfix"><li class="goodsimg"><a href="#" target="_blank"><img src="../view/front/images/315_thumb_G_1346659439530.jpg" alt="两扣双开衩平驳头斜兜男士西服套装3312/纯藏青色人字纹/羊毛+涤纶" class="B_blue"></a></li><li><a href="#" target="_blank" title="两扣双开衩平驳头斜兜男士西服套装3312/纯藏青色人字纹/羊毛+涤纶">两扣双开衩平驳头斜兜男...</a><br>本店售价：<font class="f1">￥799元</font><br></li></ul><ul id="clear_history"><a onclick="clear_history()">[清空]</a></ul>             
+                  <?php foreach($history as $v){?>
+					<ul class="clearfix">
+					<li class="goodsimg"><a target="_blank" href="#"><img class="B_blue" alt="<?php echo $v["goods_name"];?>" src="<?php echo "../".$v["thumb_img"];?>"></a></li>
+					<li><a title="<?php echo $v["goods_name"];?>" target="_blank" href="#"><?php echo mb_substr($v['goods_name'],0,12,'UTF-8'); ?>...</a><br>售价：<font class="f1">￥<?php echo $v["shop_price"];?>元</font><br></li>
+					</ul>
+					<?php }?>	          
                 </div>
                  <div class="lib_down"></div>
             </div>
@@ -289,48 +294,50 @@
     <div class="blank5"></div>
       
       <div>
-      <form action="javascript:;" onsubmit="submitComment(this)" method="post" name="commentForm" id="commentForm">
+      <form action="goodscomments.php" onsubmit="submitComment(this)" method="post" name="commentForm" id="commentForm">
        <table width="710" cellspacing="5" cellpadding="0" border="0">
         <tbody><tr>
           <td width="64" align="right">用户名：</td>
-          <td width="631">匿名用户</td>
+          <td width="631"><?php echo $username;?></td>
+		  <input type="hidden" name="user_id" value="<?php echo $userid;?>">
+          <input type="hidden" name="username" value="<?php echo $username;?>">
         </tr>
         <tr>
           <td align="right">E-mail：</td>
           <td>
-          <input type="text" name="email" id="email" maxlength="100" value="" class="inputBorder">
+          <input type="text" name="email" id="email" maxlength="100" value="<?php echo $email;?>" class="inputBorder">
           </td>
         </tr>
         <tr>
           <td align="right">评价等级：</td>
           <td>
-          <input type="radio" name="comment_rank" value="1" id="comment_rank1"> <img src="../view/front/images/stars1.gif">
-          <input type="radio" name="comment_rank" value="2" id="comment_rank2"> <img src="../view/front/images/stars2.gif">
-          <input type="radio" name="comment_rank" value="3" id="comment_rank3"> <img src="../view/front/images/stars3.gif">
-          <input type="radio" name="comment_rank" value="4" id="comment_rank4"> <img src="../view/front/images/stars4.gif">
-          <input type="radio" name="comment_rank" value="5" checked="checked" id="comment_rank5"> <img src="../view/front/images/stars5.gif">
+          <input type="radio" name="clevel" value="1" id="comment_rank1"> <img src="../view/front/images/stars1.gif">
+          <input type="radio" name="clevel" value="2" id="comment_rank2"> <img src="../view/front/images/stars2.gif">
+          <input type="radio" name="clevel" value="3" id="comment_rank3"> <img src="../view/front/images/stars3.gif">
+          <input type="radio" name="clevel" value="4" id="comment_rank4"> <img src="../view/front/images/stars4.gif">
+          <input type="radio" name="clevel" value="5" checked="checked" id="comment_rank5"> <img src="../view/front/images/stars5.gif">
           </td>
         </tr>
         <tr>
           <td valign="top" align="right">评论内容：</td>
           <td>
-          <textarea name="content" class="inputBorder" style="height:50px; width:620px;"></textarea>
-          <input type="hidden" name="cmt_type" value="0">
-          <input type="hidden" name="id" value="315">
+          <textarea name="ccontent" class="inputBorder" style="height:50px; width:620px;"></textarea>
+		  <input type="hidden" name="goods_id" value="<?php echo $goodsInfo['goods_id'];?>">
+          <input type="hidden" name="goods_name" value="<?php echo $goodsInfo['goods_name'];?>">
           </td>
         </tr>
         <tr>
           <td colspan="2">
-                    <div style="padding-left:15px; text-align:left; float:left;">
+          <div style="padding-left:15px; text-align:left; float:left;">
           验证码：<input type="text" name="captcha" class="txt_style_1" style="width:50px; margin-left:5px;">
-          <img align="absmiddle" src="../view/front/images/captcha.php" alt="captcha" onclick="this.src='captcha.php?'+Math.random()">
+          <img align="absmiddle" src="captcha.php?<?php echo rand();?>" alt="captcha" onclick="this.src='captcha.php?'+Math.random()">
           </div>
-                    <input type="submit" name="" value="提交" class="f_r btn_style_2">
+		  <input type="submit" name="dosubmit" value="提交" class="f_r btn_style_2">
           </td>
         </tr>
       </tbody></table>
       </form>
-        </div>
+      </div>
       </div>
           
 </div>

@@ -26,3 +26,11 @@ function _displayCart(){
 	}
 	return $comm_cart;
 }
+
+function _serialize($obj_array){
+	return base64_encode(gzcompress(serialize($obj_array)));
+}
+
+function _unserialize($str){
+	return unserialize(gzuncompress(base64_decode($str)));
+}

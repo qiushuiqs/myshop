@@ -4113,3 +4113,1657 @@ select * from category
 select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (7,8,9) order by add_time desc
 select * from category
 select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (7,8,9) order by add_time desc limit 0,2
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, add_time from goods where is_new = 1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+set names utf8
+select * from category where cat_id = 7
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (7,8,9) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (7,8,9) order by add_time desc limit 0,2
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, add_time from goods where is_new = 1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, add_time from goods where is_new = 1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, add_time from goods where is_new = 1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+set names utf8
+select * from goods where goods_id=4
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, add_time from goods where is_new = 1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, add_time from goods where is_new = 1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+set names utf8
+select * from user
+SELECT * FROM user limit 0,7
+set names utf8
+select * from goods where goods_id=63
+select * from category
+select * from category where cat_id = 
+error
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, add_time from goods where is_new = 1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, add_time from goods where is_new = 1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, add_time from goods where is_new = 1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+set names utf8
+select * from goods where goods_id=18
+select * from category
+select * from category where cat_id = 9
+set names utf8
+select * from category where cat_id = 9
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (9) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (9) order by add_time desc limit 0,2
+set names utf8
+SHOW COLUMNS FROM user
+select count(*) from user where username='tom123'
+insert into user (username,email,password,regtime)values ('tom123','tom123@hotmail.com','5caf72868c94f184650f43413092e82c','1413606274')
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, add_time from goods where is_new = 1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,2
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,2
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,2
+set names utf8
+select * from category where cat_id = 7
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (7,8,9) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (7,8,9) order by add_time desc limit 0,2
+set names utf8
+select * from user where username='tom123'
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, add_time from goods where is_new = 1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,2
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, add_time from goods where is_new = 1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,2
+set names utf8
+select * from goods where goods_id=13
+select * from category
+select * from category where cat_id = 6
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,2
+set names utf8
+select * from goods where goods_id=13
+select * from category
+select * from category where cat_id = 6
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,2
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,2
+set names utf8
+select * from goods where goods_id=5
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from goods where goods_id=5
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,2
+set names utf8
+select * from goods where goods_id=5
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,2
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,2
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,2
+set names utf8
+select * from goods where goods_id=5
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,2
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,2
+set names utf8
+select * from goods where goods_id=13
+select * from category
+select * from category where cat_id = 6
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,2
+set names utf8
+select * from goods where goods_id=13
+select * from category
+select * from category where cat_id = 6
+set names utf8
+select * from goods where goods_id=13
+select * from category
+select * from category where cat_id = 6
+set names utf8
+select * from goods where goods_id=13
+select * from category
+select * from category where cat_id = 6
+set names utf8
+select * from goods where goods_id=13
+select * from category
+select * from category where cat_id = 6
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,2
+set names utf8
+select * from goods where goods_id=13
+select * from category
+select * from category where cat_id = 6
+set names utf8
+select * from goods where goods_id=13
+select * from category
+select * from category where cat_id = 6
+set names utf8
+select * from goods where goods_id=13
+select * from category
+select * from category where cat_id = 6
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,2
+set names utf8
+select * from goods where goods_id=13
+select * from category
+select * from category where cat_id = 6
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,2
+set names utf8
+select * from goods where goods_id=13
+select * from category
+select * from category where cat_id = 6
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,2
+set names utf8
+select * from goods where goods_id=12
+select * from category
+select * from category where cat_id = 6
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,2
+set names utf8
+select * from goods where goods_id=13
+select * from category
+select * from category where cat_id = 6
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,2
+set names utf8
+select * from goods where goods_id=13
+select * from category
+select * from category where cat_id = 6
+set names utf8
+select * from goods where goods_id=13
+select * from category
+select * from category where cat_id = 6
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,2
+set names utf8
+select * from goods where goods_id=12
+select * from category
+select * from category where cat_id = 6
+set names utf8
+select * from goods where goods_id=12
+select * from category
+select * from category where cat_id = 6
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,2
+set names utf8
+select * from goods where goods_id=13
+select * from category
+select * from category where cat_id = 6
+set names utf8
+select * from goods where goods_id=13
+select * from category
+select * from category where cat_id = 6
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,2
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,2
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 4,2
+set names utf8
+select * from goods where goods_id=8
+select * from category
+select * from category where cat_id = 5
+set names utf8
+select * from goods where goods_id=8
+select * from category
+select * from category where cat_id = 5
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 4,2
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,2
+set names utf8
+select * from goods where goods_id=5
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from goods where goods_id=5
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,2
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,2
+set names utf8
+select * from category where cat_id = 7
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (7,8,9) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (7,8,9) order by add_time desc limit 0,2
+set names utf8
+select * from goods where goods_id=18
+select * from category
+select * from category where cat_id = 9
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, add_time from goods where is_new = 1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,2
+set names utf8
+select * from goods where goods_id=12
+select * from category
+select * from category where cat_id = 6
+set names utf8
+select * from goods where goods_id=12
+select * from category
+select * from category where cat_id = 6
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,2
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,2
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,2
+set names utf8
+select * from goods where goods_id=5
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,2
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,2
+set names utf8
+select * from goods where goods_id=13
+select * from category
+select * from category where cat_id = 6
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,2
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,2
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,2
+set names utf8
+select * from category where cat_id = 10
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (10,11,12) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (10,11,12) order by add_time desc limit 0,2
+set names utf8
+select * from goods where goods_id=25
+select * from category
+select * from category where cat_id = 12
+set names utf8
+select * from goods where goods_id=25
+select * from category
+select * from category where cat_id = 12
+set names utf8
+select * from category where cat_id = 10
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (10,11,12) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (10,11,12) order by add_time desc limit 0,2
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,2
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 4,2
+set names utf8
+select * from goods where goods_id=8
+select * from category
+select * from category where cat_id = 5
+set names utf8
+select * from goods where goods_id=8
+select * from category
+select * from category where cat_id = 5
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 4,2
+set names utf8
+select * from goods where goods_id=9
+select * from category
+select * from category where cat_id = 5
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 4,2
+set names utf8
+select * from goods where goods_id=8
+select * from category
+select * from category where cat_id = 5
+set names utf8
+select * from goods where goods_id=8
+select * from category
+select * from category where cat_id = 5
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 4,2
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,2
+set names utf8
+select * from goods where goods_id=5
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from goods where goods_id=5
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,2
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 2,2
+set names utf8
+select * from goods where goods_id=3
+select * from category
+select * from category where cat_id = 2
+set names utf8
+select * from goods where goods_id=3
+select * from category
+select * from category where cat_id = 2
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 2,2
+set names utf8
+select * from category where cat_id = 10
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (10,11,12) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (10,11,12) order by add_time desc limit 0,2
+set names utf8
+select * from goods where goods_id=25
+select * from category
+select * from category where cat_id = 12
+set names utf8
+select * from goods where goods_id=25
+select * from category
+select * from category where cat_id = 12
+set names utf8
+select * from category where cat_id = 10
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (10,11,12) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (10,11,12) order by add_time desc limit 0,2
+set names utf8
+select * from category where cat_id = 10
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (10,11,12) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (10,11,12) order by add_time desc limit 2,2
+set names utf8
+select * from goods where goods_id=23
+select * from category
+select * from category where cat_id = 12
+set names utf8
+select * from goods where goods_id=23
+select * from category
+select * from category where cat_id = 12
+set names utf8
+select * from category where cat_id = 10
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (10,11,12) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (10,11,12) order by add_time desc limit 2,2
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,2
+set names utf8
+select * from goods where goods_id=5
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from goods where goods_id=5
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,2
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,2
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,2
+set names utf8
+select * from goods where goods_id=5
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, add_time from goods where is_new = 1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,2
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, add_time from goods where is_new = 1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, add_time from goods where is_new = 1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+set names utf8
+select * from goods where is_delete = 0
+SELECT * FROM goods limit 0,7
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from goods where is_delete = 0
+SELECT * FROM goods limit 0,7
+set names utf8
+select * from goods where is_delete = 0
+SELECT * FROM goods limit 7,7
+set names utf8
+select * from goods where is_delete = 0
+SELECT * FROM goods limit 14,7
+set names utf8
+select * from goods where is_delete = 0
+SELECT * FROM goods limit 21,7
+set names utf8
+select * from goods where goods_id=18
+select * from category
+select * from category where cat_id = 9
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, add_time from goods where is_new = 1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+set names utf8
+select * from goods where goods_id=15
+select * from category
+select * from category where cat_id = 8
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,2
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,2
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,2
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,2
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,2
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,4
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,4
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,4
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,4
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 4,4
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,4
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 4,4
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,4
+set names utf8
+select * from goods where goods_id=13
+select * from category
+select * from category where cat_id = 6
+set names utf8
+select * from category where cat_id = 7
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (7,8,9) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (7,8,9) order by add_time desc limit 0,4
+set names utf8
+select * from goods where goods_id=18
+select * from category
+select * from category where cat_id = 9
+set names utf8
+select * from goods where goods_id=18
+select * from category
+select * from category where cat_id = 9
+set names utf8
+select * from goods where goods_id=18
+select * from category
+select * from category where cat_id = 9
+set names utf8
+select * from category where cat_id = 7
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (7,8,9) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (7,8,9) order by add_time desc limit 0,4
+set names utf8
+select * from goods where goods_id=18
+select * from category
+select * from category where cat_id = 9
+set names utf8
+select * from category where cat_id = 7
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (7,8,9) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (7,8,9) order by add_time desc limit 0,4
+set names utf8
+select * from goods where goods_id=19
+select * from category
+select * from category where cat_id = 9
+set names utf8
+select * from goods where goods_id=19
+select * from category
+select * from category where cat_id = 9
+set names utf8
+select * from goods where goods_id=19
+select * from category
+select * from category where cat_id = 9
+set names utf8
+select * from user where username='qiushuiqs'
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, add_time from goods where is_new = 1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+set names utf8
+select * from goods where goods_id=18
+select * from category
+select * from category where cat_id = 9
+set names utf8
+select * from goods where goods_id=18
+select * from category
+select * from category where cat_id = 9
+set names utf8
+select * from goods where goods_id=18
+select * from category
+select * from category where cat_id = 9
+set names utf8
+select * from goods where goods_id=18
+select * from category
+select * from category where cat_id = 9
+set names utf8
+set names utf8
+select * from goods where goods_id=18
+select * from category
+select * from category where cat_id = 9
+set names utf8
+set names utf8
+select * from goods where goods_id=18
+select * from category
+select * from category where cat_id = 9
+set names utf8
+set names utf8
+select * from goods where goods_id=18
+select * from category
+select * from category where cat_id = 9
+set names utf8
+set names utf8
+select * from goods where goods_id=18
+select * from category
+select * from category where cat_id = 9
+set names utf8
+set names utf8
+select * from goods where goods_id=18
+select * from category
+select * from category where cat_id = 9
+set names utf8
+set names utf8
+select * from goods where goods_id=18
+select * from category
+select * from category where cat_id = 9
+set names utf8
+set names utf8
+select * from goods where goods_id=18
+select * from category
+select * from category where cat_id = 9
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,4
+set names utf8
+select * from goods where goods_id=5
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from goods where goods_id=5
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from goods where goods_id=5
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from goods where goods_id=5
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from goods where goods_id=5
+select * from category
+select * from category where cat_id = 3
+set names utf8
+set names utf8
+select * from goods where goods_id=5
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from goods where goods_id=5
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,4
+set names utf8
+select * from goods where goods_id=5
+select * from category
+select * from category where cat_id = 3
+set names utf8
+set names utf8
+select * from goods where goods_id=5
+select * from category
+select * from category where cat_id = 3
+set names utf8
+set names utf8
+select * from goods where goods_id=5
+select * from category
+select * from category where cat_id = 3
+set names utf8
+set names utf8
+select * from goods where goods_id=5
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from goods where goods_id=5
+select * from category
+select * from category where cat_id = 3
+set names utf8
+set names utf8
+select * from goods where goods_id=5
+select * from category
+select * from category where cat_id = 3
+set names utf8
+set names utf8
+select * from goods where goods_id=5
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,4
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+SHOW COLUMNS FROM goodscomments
+error
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+SHOW COLUMNS FROM goodscomments
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+SHOW COLUMNS FROM goodscomments
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+SHOW COLUMNS FROM goodscomments
+insert into goodscomments (email,clevel,ccontent,goods_id,goods_name,user_id,username,add_time)values ('sdds@163.com','5','sdddd','6','男士短袖衬衫A52D/纯白暗竖纹/莫代尔棉','2','qiushuiqs','1413730228')
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+SHOW COLUMNS FROM goodscomments
+insert into goodscomments (email,clevel,ccontent,goods_id,goods_name,user_id,username,add_time)values ('sdds@163.com','5','sdddd','6','男士短袖衬衫A52D/纯白暗竖纹/莫代尔棉','2','qiushuiqs','1413730237')
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,4
+set names utf8
+select * from goods where goods_id=4
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from goods where goods_id=4
+select * from category
+select * from category where cat_id = 3
+set names utf8
+SHOW COLUMNS FROM goodscomments
+insert into goodscomments (user_id,username,email,clevel,ccontent,goods_id,goods_name,add_time)values ('2','qiushuiqs','qiushui@163.com','1','非常好的衣服','4','蓝黑竖条纹男士休闲衬衫','1413730673')
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,4
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,4
+set names utf8
+select * from goods where goods_id=4
+select * from category
+select * from category where cat_id = 3
+set names utf8
+set names utf8
+select * from goods where goods_id=4
+select * from category
+select * from category where cat_id = 3
+set names utf8
+set names utf8
+select * from goods where goods_id=4
+select * from category
+select * from category where cat_id = 3
+set names utf8
+set names utf8
+select * from goods where goods_id=4
+select * from category
+select * from category where cat_id = 3
+set names utf8
+set names utf8
+select * from goods where goods_id=4
+select * from category
+select * from category where cat_id = 3
+set names utf8
+set names utf8
+select * from goods where goods_id=4
+select * from category
+select * from category where cat_id = 3
+set names utf8
+set names utf8
+select * from goods where goods_id=4
+select * from category
+select * from category where cat_id = 3
+set names utf8
+set names utf8
+select * from goods where goods_id=4
+select * from category
+select * from category where cat_id = 3
+set names utf8
+SHOW COLUMNS FROM goodscomments
+insert into goodscomments (user_id,username,email,clevel,ccontent,goods_id,goods_name,add_time)values ('0','annonnymous','sdds@163.com','2','好想买这个商品','4','蓝黑竖条纹男士休闲衬衫','1413731195')
+set names utf8
+select * from category where cat_id = 7
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (7,8,9) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (7,8,9) order by add_time desc limit 0,4
+set names utf8
+select * from category where cat_id = 7
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (7,8,9) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (7,8,9) order by add_time desc limit 0,4
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, add_time from goods where is_new = 1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, add_time from goods where is_new = 1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, add_time from goods where is_new = 1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+set names utf8
+select * from category where cat_id = 4
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,4
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, add_time from goods where is_new = 1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, add_time from goods where is_new = 1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+set names utf8
+select * from goods where goods_id=1
+select * from category
+select * from category where cat_id = 2
+set names utf8
+select * from goods where goods_id=1
+select * from category
+select * from category where cat_id = 2
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, add_time from goods where is_new = 1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+set names utf8
+select * from goods where goods_id=6
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from goods where goods_id=7
+select * from category
+select * from category where cat_id = 5
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, add_time from goods where is_new = 1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,5
+set names utf8
+select * from goods where goods_id=11
+select * from category
+select * from category where cat_id = 6
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,4
+set names utf8
+select * from category where cat_id = 8
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (8) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (8) order by add_time desc limit 0,4
+set names utf8
+select * from category where cat_id = 7
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (7,8,9) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (7,8,9) order by add_time desc limit 0,4
+set names utf8
+select * from category where cat_id = 10
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (10,11,12) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (10,11,12) order by add_time desc limit 0,4
+set names utf8
+select * from category where cat_id = 10
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (10,11,12) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (10,11,12) order by add_time desc limit 0,4
+set names utf8
+select * from goods where goods_id=24
+select * from category
+select * from category where cat_id = 12
+set names utf8
+select * from goods where goods_id=24
+select market_price, thumb_img from goods where goods_id=24
+set names utf8
+select * from category where cat_id = 7
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (7,8,9) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (7,8,9) order by add_time desc limit 0,4
+set names utf8
+select * from goods where goods_id=15
+select * from category
+select * from category where cat_id = 8
+set names utf8
+select * from goods where goods_id=15
+select market_price, thumb_img from goods where goods_id=24
+select market_price, thumb_img from goods where goods_id=15
+set names utf8
+select market_price, thumb_img from goods where goods_id=24
+select market_price, thumb_img from goods where goods_id=15
+set names utf8
+select market_price, thumb_img from goods where goods_id=24
+select market_price, thumb_img from goods where goods_id=15
+set names utf8
+select market_price, thumb_img from goods where goods_id=24
+select market_price, thumb_img from goods where goods_id=15
+set names utf8
+select market_price, thumb_img from goods where goods_id=24
+select market_price, thumb_img from goods where goods_id=15
+set names utf8
+select market_price, thumb_img from goods where goods_id=24
+select market_price, thumb_img from goods where goods_id=15
+set names utf8
+select market_price, thumb_img from goods where goods_id=24
+select market_price, thumb_img from goods where goods_id=15
+set names utf8
+select market_price, thumb_img from goods where goods_id=24
+select market_price, thumb_img from goods where goods_id=15
+set names utf8
+select market_price, thumb_img from goods where goods_id=24
+select market_price, thumb_img from goods where goods_id=15
+set names utf8
+select market_price, thumb_img from goods where goods_id=24
+select market_price, thumb_img from goods where goods_id=15
+set names utf8
+select market_price, thumb_img from goods where goods_id=24
+select market_price, thumb_img from goods where goods_id=15
+set names utf8
+select * from category where cat_id = 1
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,4
+set names utf8
+select * from goods where goods_id=4
+select * from category
+select * from category where cat_id = 3
+set names utf8
+select * from goods where goods_id=4
+select market_price, thumb_img from goods where goods_id=24
+select market_price, thumb_img from goods where goods_id=15
+select market_price, thumb_img from goods where goods_id=4
+set names utf8
+select * from category where cat_id = 7
+select * from category
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (7,8,9) order by add_time desc
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (7,8,9) order by add_time desc limit 0,4
+set names utf8
+select market_price, thumb_img from goods where goods_id=24
+select market_price, thumb_img from goods where goods_id=15
+select market_price, thumb_img from goods where goods_id=4
+set names utf8
+select * from goods where is_delete = 0
+SELECT * FROM goods limit 0,7
+set names utf8
+select * from goods where is_delete = 0
+SELECT * FROM goods limit 0,7
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+select * from orderinfo
+set names utf8
+select * from user
+SELECT * FROM user limit 0,7
+set names utf8
+select * from goods where is_delete = 1
+set names utf8
+select * from goods where is_delete = 1
+set names utf8
+select * from goods where is_delete = 1
+set names utf8
+select * from goods where is_delete = 1
+set names utf8
+select * from goods where is_delete = 0
+SELECT * FROM goods limit 0,7
+set names utf8
+select cat_id, cat_name, dscrpt, parent_id from category
+set names utf8
+SHOW COLUMNS FROM goods
+select * from goods where goods_sn = 'GD141373219349162'
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_new,is_hot,is_on_sale,goods_brief,goods_id,is_best,add_time)values ('测试回收站','GD141373219349162','2','1111','11111','<p>这是一个拜读文本文件</p>','20','12','1','1','1','meiyoushenmemiaosu','0','0','1413732193')
+set names utf8
+select * from goods where is_delete = 0
+SELECT * FROM goods limit 0,7
+set names utf8
+select * from goods where is_delete = 0
+SELECT * FROM goods limit 21,7
+set names utf8
+update goods set is_delete = '1' where goods_id=27
+set names utf8
+select * from goods where is_delete = 1
+set names utf8
+select * from goods where is_delete = 0
+SELECT * FROM goods limit 0,7
+set names utf8
+select * from user
+SELECT * FROM user limit 0,7
+set names utf8
+select * from orderinfo
+set names utf8
+select * from goods where is_delete = 0
+SELECT * FROM goods limit 0,7
+set names utf8
+select * from user
+SELECT * FROM user limit 0,7
+set names utf8
+select * from orderinfo
+set names utf8
+SHOW COLUMNS FROM orderinfo
+select * from orderinfo where order_sn = 'OD141373247550741'
+insert into orderinfo (zone,receiver,email,address,postcode,tel,mobile,building,best_time,pay_method,add_time,user_id,username,order_amount,order_sn)values ('河南','张三','zhangshan@hotmail.com','河南驻马店市虹口区太平路87号','100000','','13823224312','','','4','1413732475','0','anonymous','438','OD141373247550741')
+insert into transactinfo (goods_id,goods_name,goods_number,shop_price,subtotal,order_sn,order_id)values ('24','黑色烤漆不锈钢自动扣细纹牛皮正装腰带','1','89.00','89','OD141373247550741','3')
+insert into transactinfo (goods_id,goods_name,goods_number,shop_price,subtotal,order_sn,order_id)values ('15','滑轮添奴男士系带正装鞋/牛皮','1','150.00','150','OD141373247550741','3')
+insert into transactinfo (goods_id,goods_name,goods_number,shop_price,subtotal,order_sn,order_id)values ('4','蓝黑竖条纹男士休闲衬衫','1','199.00','199','OD141373247550741','3')
+update goods set goods_number = goods_number-1 where goods_id=24
+update goods set goods_number = goods_number-1 where goods_id=15
+update goods set goods_number = goods_number-1 where goods_id=4
+set names utf8
+select * from orderinfo
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, add_time from goods where is_new = 1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,5
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, add_time from goods where is_new = 1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,5
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, add_time from goods where is_new = 1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (4,5,6) order by add_time desc limit 0,5
+select * from category
+select goods_id,goods_name, shop_price, market_price, thumb_img, add_time, goods_img from goods where cat_id in (1,2,3) order by add_time desc limit 0,5
+set names utf8
+select * from goods where goods_id=1
+select * from category
+select * from category where cat_id = 2
